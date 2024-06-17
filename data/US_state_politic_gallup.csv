@@ -1,0 +1,54 @@
+﻿State,Code,Democrat/Lean Democratic,Republican/Lean Republican,Democratic advantage,N,Classification,Political_aff
+,,%,%,pct. pts.,,,
+U.S.,,45,38,7,"180,106",Lean Dem,DEM
+Alabama,AL,47,39,8,941,Lean Dem,DEM
+Alaska,AK,43,40,3,831,Competitive,IND
+Arizona,AZ,52,30,22,496,Solid Dem,DEM
+Arkansas,AR,57,26,31,"3,805",Solid Dem,DEM
+California,CA,48,27,21,602,Solid Dem,DEM
+Colorado,CO,51,32,19,"2,020",Solid Dem,DEM
+Connecticut,CT,52,29,23,"10,864",Solid Dem,DEM
+Delaware,DE,48,33,15,"4,455",Solid Dem,DEM
+District of Columbia,DC,46,41,5,"7,974",Competitive,IND
+Florida,FL,56,28,28,"3,193",Solid Dem,DEM
+Georgia,GA,45,33,12,500,Solid Dem,DEM
+Hawaii,HI,40,44,-4,"1,011",Competitive,IND
+Idaho,ID,41,42,-1,"6,319",Competitive,IND
+Illinois,IL,45,38,7,"5,541",Lean Dem,DEM
+Indiana,IN,41,43,-2,"3,578",Competitive,IND
+Iowa,IA,50,33,17,"5,712",Solid Dem,DEM
+Kansas,KS,43,41,2,"3,353",Competitive,IND
+Kentucky,KY,47,37,10,"3,428",Solid Dem,DEM
+Louisiana,LA,42,42,0,"2,126",Competitive,IND
+Maine,ME,38,45,-7,"3,602",Lean Rep,REP
+Maryland,MD,28,56,-28,536,Solid Rep,REP
+Massachusetts,MA,35,52,-17,579,Solid Rep,REP
+Michigan,MI,35,50,-15,"1,437",Solid Rep,REP
+Minnesota,MN,34,48,-14,"1,771",Solid Rep,REP
+Mississippi,MS,45,38,7,"4,893",Lean Dem,DEM
+Missouri,MO,44,39,5,"5,774",Competitive,IND
+Montana,MT,37,47,-10,"2,821",Solid Rep,REP
+Nebraska,NE,42,40,2,"5,458",Competitive,IND
+Nevada,NV,42,39,3,"11,094",Competitive,IND
+New Hampshire,NH,41,45,-4,"2,508",Competitive,IND
+New Jersey,NJ,35,47,-12,"4,117",Solid Rep,REP
+New Mexico,NM,35,50,-15,"3,057",Solid Rep,REP
+New York,NY,38,45,-7,"1,654",Lean Rep,REP
+North Carolina,NC,36,45,-9,"1,883",Lean Rep,REP
+North Dakota,ND,40,43,-3,"2,589",Competitive,IND
+Ohio,OH,35,49,-14,"2,459",Solid Rep,REP
+Oklahoma,OK,38,41,-3,"14,138",Competitive,IND
+Oregon,OR,37,51,-14,"1,059",Solid Rep,REP
+Pennsylvania,PA,40,42,-2,"3,669",Competitive,IND
+Rhode Island,RI,46,37,9,"3,574",Lean Dem,DEM
+South Carolina,SC,31,53,-22,"1,254",Solid Rep,REP
+South Dakota,SD,27,56,-29,493,Solid Rep,REP
+Tennessee,TN,29,56,-27,"2,099",Solid Rep,REP
+Texas,TX,42,39,3,"1,540",Competitive,IND
+Utah,UT,48,34,14,"1,454",Solid Dem,DEM
+Vermont,VT,51,30,21,"18,168",Solid Dem,DEM
+Virginia,VA,49,36,13,"3,187",Solid Dem,DEM
+Washington,WA,49,34,15,"4,686",Solid Dem,DEM
+West Virginia,WV,50,28,22,739,Solid Dem,DEM
+Wisconsin,WI,31,52,-21,553,Solid Rep,REP
+Wyoming,WY,70,11,59,512,Solid Dem,DEM
