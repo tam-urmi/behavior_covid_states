@@ -5,6 +5,8 @@ library(pollster)
 library(tidyverse)
 library(survey)
 library(srvyr)
+library(haven)
+library(labelled)
 
 path <- "PAPERS/behaviors/"
 
@@ -19,18 +21,41 @@ datasets[[15]] <- datasets[[15]] %>% filter(StartDate < as.Date("2021-09-28"))
 datasets[[17]] <- datasets[[17]] %>% filter(StartDate < as.Date("2022-01-26"))
 datasets[[19]] <- datasets[[19]] %>% filter(StartDate < as.Date("2022-07-06"))
 
-### health behaviors
+### set up variable names and fill NA from -99
 
 visit_variables <- paste0("visit_", c(1,2,4,8,9,10,12))
 cov_beh_variables <- paste0("cov_beh_", c(1,2,3,5))
 
-dat <- datasets[[1]]
+datasets <- lapply(datasets, function(d) d %>% 
+                     mutate(across(all_of(c(cov_beh_variables, "event")), 
+                            ~ zap_missing(.)))
+)
+
+cov_beh_map <- substring(var_label(dat[cov_beh_variables]),100,200)
+cov_beh_map <- setNames(cov_beh_map, cov_beh_variables)
+
+rename_lookup <- c(
+  sapply(visit_variables, function(var) val_label(dat[[var]], 1)),
+  cov_beh_map,
+  event_at_least_1 = "Been in a room with someone outside of household in the past 24 hours",
+  event_5_10 = "Been in a room with 5-10 people outside of household in the past 24 hours",
+  event_11_50 = "Been in a room with 11-50 people outside of household in the past 24 hours",
+  event_50 = "Been in a room with over 50 people outside of household in the past 24 hours"
+)
+rename_lookup <- setNames(names(rename_lookup), rename_lookup)
+
+rename_lookup_se <- setNames( str_c(rename_lookup, "_se"), names(rename_lookup))
+
+
+### main text numbers 
 
 national_dat <- lapply(datasets,
        function(dat) dat %>% as_survey_design(weight=weight) %>%
          summarise(Wave = first(wave),
-                   across(all_of(visit_variables), ~survey_mean(., na.rm = T)*100),
-                   across(all_of(cov_beh_variables), ~survey_mean(.==4, na.rm = T)*100),
+                   across(all_of(visit_variables), 
+                          ~survey_mean(., na.rm = T)*100),
+                   across(all_of(cov_beh_variables),
+                          ~survey_mean(.==4, na.rm = T)*100),
                    event_at_least_1 = survey_mean(event > 1, na.rm = T)*100,
                    event_5_10 = survey_mean(event %in% c(4,5,6), na.rm = T)*100,
                    event_11_50 = survey_mean(event == 7, na.rm = T)*100,
@@ -39,14 +64,15 @@ national_dat <- lapply(datasets,
                    End_Date = max(EndDate))
 ) %>% bind_rows() 
 
-write_csv(national_dat, str_c(path, "national_beh.csv"))
 
 state_dat <- lapply(datasets,
-                       function(dat) dat %>% as_survey_design(weight=weight) %>%
+                       function(dat) dat %>% as_survey_design(weight=weight_state) %>%
                          group_by(state_code) %>% 
                          summarise(Wave = first(wave),
-                                   across(all_of(visit_variables), ~survey_mean(., na.rm = T)*100),
-                                   across(all_of(cov_beh_variables), ~survey_mean(.==4, na.rm = T)*100),
+                                   across(all_of(visit_variables), 
+                                          ~survey_mean(., na.rm = T)*100),
+                                   across(all_of(cov_beh_variables), 
+                                          ~survey_mean(.==4, na.rm = T)*100),
                                    event_at_least_1 = survey_mean(event > 1, na.rm = T)*100,
                                    event_5_10 = survey_mean(event %in% c(4,5,6), na.rm = T)*100,
                                    event_11_50 = survey_mean(event == 7, na.rm = T)*100,
@@ -55,7 +81,68 @@ state_dat <- lapply(datasets,
                                    End_Date = max(EndDate))
 ) %>% bind_rows() 
 
-write_csv(state_dat, str_c(path, "state_beh.csv"))
+numbers_df <- bind_rows(
+  select(state_dat, !ends_with("se")),
+  select(national_dat, !ends_with("se")) %>% 
+    mutate(state_code = "National"),
+) %>%
+  rename(all_of(rename_lookup)) 
+
+error_margin_df <- bind_rows(
+  select(state_dat, Wave, state_code, ends_with("se")), 
+  select(national_dat, Wave, ends_with("se")) %>% 
+           mutate(state_code = "National")
+) %>%
+  mutate(across(ends_with("se"), ~.*1.96)) %>%
+  rename(all_of(rename_lookup_se))
+
+write_csv(numbers_df, str_c(path, "behaviors_perc.csv"))
+write_csv(error_margin_df, str_c(path, "behaviors_error_margins.csv"))
+
+
+
+#### different aggregations for SI
+
+cov_beh_map_si <- substring(var_label(dat[cov_beh_variables]),100,200) %>%
+  str_c(., "_somewhat likely + very likely")
+cov_beh_map_si <- setNames(cov_beh_map_si, cov_beh_variables)
+rename_lookup_si <- c(
+  cov_beh_map_si,
+  event_at_least_5 = "Been in a room with at least 5 people outside of household in the past 24 hours",
+  event_at_least_11 = "Been in a room with at least 11 people outside of household in the past 24 hours"
+)
+
+rename_lookup_si <- setNames(names(rename_lookup_si), rename_lookup_si)
+
+
+national_dat_SI <- lapply(datasets,
+                       function(dat) dat %>% as_survey_design(weight=weight) %>%
+                         summarise(Wave = first(wave),
+                                   across(all_of(cov_beh_variables),
+                                          ~survey_mean(.>=3, na.rm = T)*100),
+                                   event_at_least_5 = survey_mean(event >= 4, na.rm = T)*100,
+                                   event_at_least_11 = survey_mean(event >= 7, na.rm = T)*100,
+                                   Start_Date = min(StartDate),
+                                   End_Date = max(EndDate))
+) %>% bind_rows() %>%
+  select(!ends_with("se")) %>%
+  rename(all_of(rename_lookup_si))
+
+write_csv(national_dat_SI, str_c(path, "behaviors_SI.csv"))
+
+# 
+# 
+# state_dat_SI <- lapply(datasets,
+#                     function(dat) dat %>% as_survey_design(weight=weight_state) %>%
+#                       group_by(state_code) %>% 
+#                       summarise(Wave = first(wave),
+#                                 across(all_of(cov_beh_variables),
+#                                        ~survey_mean(.>=3, na.rm = T)*100),
+#                                 event_at_least_5 = survey_mean(event >= 4, na.rm = T)*100,
+#                                 event_at_least_11 = survey_mean(event >= 7, na.rm = T)*100,
+#                                 Start_Date = min(StartDate),
+#                                 End_Date = max(EndDate))
+# ) %>% bind_rows() 
 
 
 
