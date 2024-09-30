@@ -61,7 +61,9 @@ national_dat <- lapply(datasets,
                    event_11_50 = survey_mean(event == 7, na.rm = T)*100,
                    event_50 = survey_mean(event > 7, na.rm = T)*100,
                    Start_Date = min(StartDate),
-                   End_Date = max(EndDate))
+                   End_Date = max(EndDate),
+                   N = sum(!is.na(event)),
+                   Total_N = n())
 ) %>% bind_rows() 
 
 
@@ -78,8 +80,11 @@ state_dat <- lapply(datasets,
                                    event_11_50 = survey_mean(event == 7, na.rm = T)*100,
                                    event_50 = survey_mean(event > 7, na.rm = T)*100,
                                    Start_Date = min(StartDate),
-                                   End_Date = max(EndDate))
+                                   End_Date = max(EndDate),
+                                   N = sum(!is.na(event)),
+                                   Total_N = n())
 ) %>% bind_rows() 
+
 
 numbers_df <- bind_rows(
   select(state_dat, !ends_with("se")),
@@ -89,16 +94,26 @@ numbers_df <- bind_rows(
   rename(all_of(rename_lookup)) 
 
 error_margin_df <- bind_rows(
-  select(state_dat, Wave, state_code, ends_with("se")), 
+  select(state_dat, state_code, Wave, ends_with("se")), 
   select(national_dat, Wave, ends_with("se")) %>% 
            mutate(state_code = "National")
 ) %>%
   mutate(across(ends_with("se"), ~.*1.96)) %>%
   rename(all_of(rename_lookup_se))
 
+full_error_tab <- bind_cols(
+  numbers_df %>% select(state_code, Wave),
+  map2_dfc(numbers_df[,3:17] %>% mutate(across(everything(), ~round(.,0))),
+        error_margin_df[3:17] %>% mutate(across(everything(), ~round(.,0))),
+        ~ str_c(.x, " (", .y, ")")),
+) %>%
+  arrange(Wave, factor(state_code, levels = c("National", unique(state_dat$state_code)))) %>%
+  relocate(Wave, state_code)
+
+
 write_csv(numbers_df, str_c(path, "behaviors_perc.csv"))
 write_csv(error_margin_df, str_c(path, "behaviors_error_margins.csv"))
-
+write_csv(full_error_tab, str_c(path, "behaviors_perc_error_margins.csv"))
 
 
 #### different aggregations for SI
@@ -175,8 +190,8 @@ write_csv(national_dat_no_return, str_c(path, "behaviors_SI_no_return.csv"))
 national_na <- lapply(datasets, function(dat) dat %>% 
          summarise(wave = first(wave),
                    across(all_of(visit_variables), ~ sum(is.na(.))),
-                   across(all_of(cov_beh_variables), ~ sum(is.na(.) | .==-99)),
-                   event = sum(is.na(event) | event == -99))) %>%
+                   across(all_of(cov_beh_variables), ~ sum(is.na(.))),
+                   event = sum(is.na(event)))) %>%
   bind_rows()
 
 write_csv(national_na, str_c(path, "national_na.csv"))
@@ -185,10 +200,10 @@ write_csv(national_na, str_c(path, "national_na.csv"))
 
 state_n <- lapply(datasets, function(dat) dat %>%
                     group_by(state_code) %>%
-                    summarise(wave = first(wave),
+                    summarise(Wave = first(wave),
                               across(all_of(visit_variables), ~ sum(!is.na(.))),
-                              across(all_of(cov_beh_variables), ~ sum(!is.na(.) | .!=-99)),
-                              event = sum(!is.na(event) | event != -99))) %>%
+                              across(all_of(cov_beh_variables), ~ sum(!is.na(.))),
+                              event = sum(!is.na(event)))) %>%
   bind_rows()
 
 write_csv(state_n, str_c(path, "state_n.csv"))
