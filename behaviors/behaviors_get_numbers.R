@@ -102,9 +102,11 @@ error_margin_df <- bind_rows(
   rename(all_of(rename_lookup_se))
 
 full_error_tab <- bind_cols(
-  numbers_df %>% select(state_code, Wave),
-  map2_dfc(numbers_df[,3:17] %>% mutate(across(everything(), ~round(.,0))),
-        error_margin_df[3:17] %>% mutate(across(everything(), ~round(.,0))),
+  numbers_df %>% select(state_code, Wave) %>% filter(Wave <= 23),
+  map2_dfc(filter(numbers_df, Wave <= 23)[,3:17] %>%
+             mutate(across(everything(), ~round(.,0))),
+        filter(error_margin_df, Wave <=23)[3:17] %>%
+          mutate(across(everything(), ~round(.,0))),
         ~ str_c(.x, " (", .y, ")")),
 ) %>%
   arrange(Wave, factor(state_code, levels = c("National", unique(state_dat$state_code)))) %>%
@@ -184,10 +186,21 @@ national_dat_no_return <- lapply(datasets_si,
 write_csv(national_dat_no_return, str_c(path, "behaviors_SI_no_return.csv"))
 
 
-### Tables with sample sizes
+### Tables with sample sizes and total N's
 
 
-national_na <- lapply(datasets, function(dat) dat %>% 
+sapply(datasets[1:19], function(d) nrow(d)) %>% sum()
+
+bind_rows(
+  lapply(datasets[1:19], 
+         function(d) select(d, id, wave))
+) %>% 
+  distinct(id) %>%
+  nrow()
+
+
+
+national_na <- lapply(datasets[1:19], function(dat) dat %>% 
          summarise(wave = first(wave),
                    across(all_of(visit_variables), ~ sum(is.na(.))),
                    across(all_of(cov_beh_variables), ~ sum(is.na(.))),
@@ -198,19 +211,46 @@ write_csv(national_na, str_c(path, "national_na.csv"))
 
 
 
-state_n <- lapply(datasets, function(dat) dat %>%
+state_n <- lapply(datasets[1:19], function(dat) dat %>%
                     group_by(state_code) %>%
                     summarise(Wave = first(wave),
                               across(all_of(visit_variables), ~ sum(!is.na(.))),
                               across(all_of(cov_beh_variables), ~ sum(!is.na(.))),
                               event = sum(!is.na(event)))) %>%
-  bind_rows()
+  bind_rows() %>%
+  rename(all_of(rename_lookup[1:11]),
+         `People out of household been in a room with` = event)
 
 write_csv(state_n, str_c(path, "state_n.csv"))
 
 n_small_waves <- state_n %>% 
-  mutate(across(visit_1:event, ~.<200)) %>%
+  mutate(across(3:14, ~.<200)) %>%
   group_by(state_code) %>%
-  summarize(across(visit_1:event, ~sum(.)))
+  summarize(across(2:13, ~sum(.)))
 
 write_csv(n_small_waves, str_c(path, "n_waves_state_filter.csv"))
+
+
+large_states <- n_small_waves %>% 
+  summarise(state_code = state_code,
+            total_small_waves = rowSums(across(2:13))) %>%
+  filter(total_small_waves == 0) %>%
+  pull(state_code)
+
+length(large_states)
+
+error_margin_flt <- error_margin_df %>%
+  filter(state_code %in% large_states) %>%
+  select(3:17) 
+
+mean(as.matrix(error_margin_flt))
+max(error_margin_flt)
+
+bool_m <- as.matrix(state_n[,3:14]) > 200
+bool_m <- cbind(bool_m, bool_m[,12], bool_m[,12], bool_m[,12])
+
+error_margin_flt <- error_margin_df[,3:17]
+error_margin_flt <- as.data.frame(error_margin_flt)[bool_m]
+max(error_margin_flt)
+
+replace(as.data.frame(error_margin_flt), !bool_m, 0)
