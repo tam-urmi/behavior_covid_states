@@ -17,7 +17,7 @@ library(patchwork)
 
 # Load data
 no_return_dat = read_csv("../covid_states_behavior1/behaviors/behaviors_SI_no_return.csv")
-standard_dat = read_csv("data/health_behaviors_W27 (1).csv")
+standard_dat = read_csv("../covid_states_behavior/data/health_behaviors_W27 (1).csv")
 
 no_return_dat = no_return_dat %>% select(-c(Start_Date, End_Date))
 no_return_dat$WaveC = as.character(no_return_dat$Wave)
@@ -30,7 +30,8 @@ standard_dat = standard_dat %>% mutate(across(where(is.numeric), ~ ./100))
 
 # Plot avoid contact against each other ----------------------------------------
 no_return_dat %>%
-  ggplot(aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`, color = "Without repeats")) +
+  ggplot(aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`,
+             color = "Without repeats")) +
   geom_line() +
   geom_line(data = standard_dat %>% filter(state_code == "National"),
             aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`, color = "With repeats")) +
@@ -96,10 +97,13 @@ for(col in 2:(ncol(no_return_dat)-1)){
 # Plotting individually for combined plot ---------------------------------------------
 
 p1 = no_return_dat %>%
-  ggplot(aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`, color = "Without repeats")) +
-  geom_line() +
+  ggplot(aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`,
+             color = "Without repeats") ) +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Avoiding contact with other people`,
+                color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -122,9 +126,10 @@ p1 = no_return_dat %>%
 
 p2 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Avoiding public or crowded places`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Avoiding public or crowded places`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Avoiding public or crowded places`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -147,9 +152,10 @@ p2 = no_return_dat %>%
 
 p3 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Wearing a face mask when outside of your home`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Wearing a face mask when outside of your home`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Wearing a face mask when outside of your home`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -172,9 +178,10 @@ p3 = no_return_dat %>%
 
 p4 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Frequently washing hands`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Frequently washing hands`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Frequently washing hands`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -197,9 +204,10 @@ p4 = no_return_dat %>%
 
 p5 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Go to work`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Go to work`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Go to work`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -222,9 +230,10 @@ p5 = no_return_dat %>%
 
 p6 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Go to the gym`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Go to the gym`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Go to the gym`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -247,9 +256,10 @@ p6 = no_return_dat %>%
 
 p7 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Go visit a friend`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Go visit a friend`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Go visit a friend`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -272,9 +282,10 @@ p7 = no_return_dat %>%
 
 p8 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Go to a cafe, bar, or restaurant`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Go to a cafe, bar, or restaurant`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Go to a cafe, bar, or restaurant`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -297,9 +308,10 @@ p8 = no_return_dat %>%
 
 p9 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Go to a doctor or visit a hospital`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Go to a doctor or visit a hospital`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Go to a doctor or visit a hospital`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -322,9 +334,10 @@ p9 = no_return_dat %>%
 
 p10 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Go to church or another place of worship`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Go to church or another place of worship`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Go to church or another place of worship`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -347,9 +360,10 @@ p10 = no_return_dat %>%
 
 p11 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Take mass transit (e.g. subway, bus, or train)`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Take mass transit (e.g. subway, bus, or train)`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Take mass transit (e.g. subway, bus, or train)`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -372,9 +386,10 @@ p11 = no_return_dat %>%
 
 p12 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Been in a room with someone outside of household in the past 24 hours`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Been in a room with someone outside of household in the past 24 hours`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Been in a room with someone outside of household in the past 24 hours`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -397,9 +412,10 @@ p12 = no_return_dat %>%
 
 p13 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Been in a room with 5-10 people outside of household in the past 24 hours`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Been in a room with 5-10 people outside of household in the past 24 hours`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Been in a room with 5-10 people outside of household in the past 24 hours`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -422,9 +438,10 @@ p13 = no_return_dat %>%
 
 p14 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Been in a room with 11-50 people outside of household in the past 24 hours`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Been in a room with 11-50 people outside of household in the past 24 hours`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Been in a room with 11-50 people outside of household in the past 24 hours`, color = "With repeats"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -447,9 +464,9 @@ p14 = no_return_dat %>%
 
 p15 = no_return_dat %>%
   ggplot(aes(x = as.numeric(WaveC), y = `Been in a room with over 50 people outside of household in the past 24 hours`, color = "Without repeats")) +
-  geom_line() +
+  geom_line(linewidth = 1.25) +
   geom_line(data = standard_dat_natl,
-            aes(x = as.numeric(WaveC), y = `Been in a room with over 50 people outside of household in the past 24 hours`, color = "With repeats")) +
+            aes(x = as.numeric(WaveC), y = `Been in a room with over 50 people outside of household in the past 24 hours`, color = "With repeats"),linewidth = 1.25) +
   scale_color_manual(values = c("Without repeats" = "dodgerblue3", "With repeats" = "gold2")) +
   scale_y_continuous(labels = scales::percent) +
   scale_x_continuous(breaks = seq(1, 27, 1)) +
@@ -470,7 +487,6 @@ p15 = no_return_dat %>%
     legend.key.height = unit(1, "lines"),
     legend.position="bottom")
 
-png(filename="figures/for_manuscript/SA_repeats/sa_repeats_combined.png", width=20, height=30, res = 150, units = "in")
 wrap_plots(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, ncol = 3, nrow = 5) +
   plot_layout(guides = "collect") & theme(legend.position = "bottom",
                                           legend.text = element_text(size = 24),
@@ -479,6 +495,5 @@ wrap_plots(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, nco
                                           plot.title = element_text(size = 18),
 
                                           )
-dev.off()
-
+ggsave(filename="figures/supplementary/SA_repeats/sa_repeats_combined.png", width=20, height=30, units = "in", bg = "white")
 
