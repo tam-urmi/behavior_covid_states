@@ -338,8 +338,11 @@ behav_osi_means = dat_osi_nr %>% group_by(party, date) %>%
 comp_f1 = dat_osi_nr %>%
   filter(is.na(party) == FALSE) %>%
   ggplot(aes(x = date, group = state, color = party)) +
-  geom_line(aes(y = StringencyIndex_Average), linetype = "dotted") +
+  geom_line(aes(y = StringencyIndex_Average), linetype = "dotted", alpha = 0.3) +
   scale_color_manual(NULL, values = c("Democrat" = "blue", "Swing" = "black", "Republican" = "red")) +
+  geom_line(data = behav_osi_means %>% drop_na(),
+            aes(x = date, y = mean_OSI, group = party, color = party),
+            linewidth = 1.25, linetype = "dashed") +
   scale_y_continuous(limits = c(15, 80), breaks = c(20, 40, 60, 80)) +
   labs(x = "", y = "OSI") +
   scale_x_date(limits = c(as_date("2020-04-30"), as_date("2022-03-31")),
@@ -350,11 +353,12 @@ comp_f1 = dat_osi_nr %>%
   theme(
     axis.text = element_text(size = 12),
     axis.title = element_text(size = 14),
+    axis.line = element_line(color = "black"),
     plot.title = element_text(size = 14),
+    panel.border = element_blank(),
     panel.background = element_rect(fill = "white"),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
-    panel.border = element_rect(color = "black", fill=NA, linewidth=1.5),
     legend.text = element_text(size = 14),
     legend.position="none")
 
@@ -362,7 +366,10 @@ comp_f1 = dat_osi_nr %>%
 comp_f2 = dat_osi_nr %>%
   filter(is.na(party) == FALSE) %>%
   ggplot(aes(x = date, group = state, color = party)) +
-  geom_line(aes(y = avoid_contact)) +
+  geom_line(aes(y = avoid_contact), alpha = 0.2) +
+  geom_line(data = behav_osi_means %>% drop_na(),
+            aes(x = date, y = mean_ac, group = party, color = party),
+            linewidth = 1.25) +
   scale_color_manual(NULL, values = c("Democrat" = "blue", "Swing" = "black", "Republican" = "red")) +
   scale_y_continuous(limits = c(10, 80), breaks = c(20, 40, 60, 80)) +
   labs(x = "", y = "% Adherence") +
@@ -374,11 +381,12 @@ comp_f2 = dat_osi_nr %>%
   theme(
     axis.text = element_text(size = 12),
     axis.title = element_text(size = 14),
+    axis.line = element_line(color = "black"),
     plot.title = element_text(size = 14),
+    panel.border = element_blank(),
     panel.background = element_rect(fill = "white"),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
-    panel.border = element_rect(color = "black", fill=NA, linewidth=1.5),
     legend.text = element_text(size = 14),
     legend.position="none")
 
@@ -386,9 +394,9 @@ comp_f3 = dat_osi_nr %>%
   filter(is.na(party) == FALSE) %>%
   ggplot(aes(x = date, group = state, color = party)) +
   geom_line(data = behav_osi_means %>% drop_na(), aes(x = date, y = mean_ac, group = party, color = party), linewidth = 1.25) +
-  geom_line(data = behav_osi_means %>% drop_na(), aes(x = date, y = mean_OSI, group = party, color = party), linewidth = 1.25, linetype = "dotted") +
+  geom_line(data = behav_osi_means %>% drop_na(), aes(x = date, y = mean_OSI, group = party, color = party), linewidth = 1.25, linetype = "dashed") +
   scale_color_manual(NULL, values = c("Democrat" = "blue", "Swing" = "black", "Republican" = "red")) +
-  scale_linetype_manual(NULL, values = c("solid", "dotted")) +
+  scale_linetype_manual(NULL, values = c("solid", "dashed")) +
   scale_y_continuous(limits = c(10, 80), breaks = c(20, 40, 60, 80)) +
   labs(x = "", y = "% Adherence / OSI") +
   scale_x_date(limits = c(as_date("2020-04-30"), as_date("2022-03-31")),
@@ -399,14 +407,15 @@ comp_f3 = dat_osi_nr %>%
   theme(
     axis.text = element_text(size = 12),
     axis.title = element_text(size = 14),
+    axis.line = element_line(color = "black"),
     plot.title = element_text(size = 14),
+    panel.border = element_blank(),
     panel.background = element_rect(fill = "white"),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
-    panel.border = element_rect(color = "black", fill=NA, linewidth=1.5),
     legend.text = element_text(size = 14),
     legend.position="none")
-
+comp_f3
 ## OSI vs. behavior by party (aggregate) ---------------------------------------
 
 comp_f4 = dat_osi_nr %>%
@@ -419,7 +428,7 @@ comp_f4 = dat_osi_nr %>%
             linewidth = 1.25) +
   geom_line(data = behav_osi_means %>% drop_na(),
             aes(x = date, y = mean_OSI, group = party, color = party),
-            linewidth = 1.25, linetype = "dotted") +
+            linewidth = 1.25, linetype = "dashed") +
   scale_color_manual(values = c("Democrat" = "blue", "Swing" = "black", "Republican" = "red")) +
   scale_linetype_manual(values = c("Behavior" = "solid", "OSI" = "dotted")) +
   scale_y_continuous(limits = c(10, 80), breaks = c(20, 40, 60, 80)) +
@@ -433,24 +442,26 @@ comp_f4 = dat_osi_nr %>%
                expand = c(0, 0)) +
   guides(linetype =
            guide_legend(override.aes = list(color = c("black"),
-                                            linetype = c("solid", "dotted"),
+                                            linetype = c("solid", "dashed"),
                                             alpha = 1))) +
   coord_cartesian(clip = "off") +
   theme(
-    axis.text = element_text(size = 12),
-    axis.title = element_text(size = 14),
-    plot.title = element_text(size = 14),
-    panel.background = element_rect(fill = "white"),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.border = element_rect(color = "black", fill=NA, linewidth=1.5),
-    legend.text = element_text(size = 11),
+      axis.text = element_text(size = 12),
+      axis.title = element_text(size = 14),
+      axis.line = element_line(color = "black"),
+      plot.title = element_text(size = 14),
+      panel.border = element_blank(),
+      panel.background = element_rect(fill = "white"),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      legend.text = element_text(size = 14),
     legend.position="bottom",
     legend.key.size = unit(1, "cm"),
     legend.direction = "vertical")
+comp_f4
 
 (comp_f1 + comp_f2) / (comp_f3 + comp_f4) +
   plot_layout(guides = "collect") +
   plot_annotation(title = "OSI / Avoid Contact with Others by Political Leaning")
 
-ggsave(filename = "figures/supplementary/avoid_contact_party_OSI_means_4p.png", height = 6, width = 8, units = "in", bg = "white")
+ggsave(filename = "figures/supplementary/avoid_contact_party_OSI_means_4p_v2.png", height = 6, width = 8, units = "in", bg = "white")
