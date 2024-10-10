@@ -17,7 +17,7 @@ library(lubridate)
 library(patchwork)
 
 # Load data
-standard_dat = read_csv("data/health_behaviors_W27 (1).csv")
+standard_dat = read_csv("../covid_states_behavior/data/health_behaviors_W27 (1).csv")
 agg_alt_dat = read_csv("../covid_states_behavior1/behaviors/behaviors_SI_different_agg.csv")
 
 # Make plots
@@ -125,10 +125,16 @@ for(col in 6:7){
 # Individual figures for combined plot ---------------------------------------------
 names(agg_alt_dat)
 
+standard_dat_selected
+
 p1 = agg_alt_dat %>%
   ggplot(aes(x = Wave, y = `Avoiding contact with other people`)) +
-  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation")) +
-  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Avoiding contact with other people`, color = "Original aggregation")) +
+  geom_line(data = agg_alt_dat,
+            aes(color = "Alternative aggregation"),
+            linewidth = 1.25) +
+  geom_line(data = standard_dat_selected,
+            aes(x = Wave, y = `Avoiding contact with other people`, color = "Original aggregation"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Alternative aggregation" = "darkslateblue", "Original aggregation" = "orange")) +
   labs(x = "Survey wave",
        y = "Adherence",
@@ -140,9 +146,6 @@ p1 = agg_alt_dat %>%
                      standard_dat_selected$`Avoiding contact with other people`)) - 0.05,  # Place slightly below the minimum value
            label = paste("Correlation:", 0.998),
            color = "black", size = 5, hjust = 0.5, vjust = 0) +
-  # geom_text(x = 14, y = min(agg_alt_dat[[col]]),
-  #           label = paste("Correlation:", round(rho, 3)),
-  #           color = "black", size = 3.5, vjust = -1) +
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(size = 15),
@@ -159,8 +162,12 @@ p1 = agg_alt_dat %>%
 
 p2 =  agg_alt_dat %>%
   ggplot(aes(x = Wave, y = `Avoiding public or crowded places`)) +
-  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation")) +
-  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Avoiding public or crowded places`, color = "Original aggregation")) +
+  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation"),
+            linewidth = 1.25) +
+  geom_line(data = standard_dat_selected,
+            aes(x = Wave, y = `Avoiding public or crowded places`,
+                color = "Original aggregation"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Alternative aggregation" = "darkslateblue", "Original aggregation" = "orange")) +
   labs(x = "Survey wave",
        y = "Adherence",
@@ -172,9 +179,6 @@ p2 =  agg_alt_dat %>%
                      standard_dat_selected$`Avoiding public or crowded places`)) - 0.05,  # Place slightly below the minimum value
            label = paste("Correlation:", 0.998),
            color = "black", size = 5, hjust = 0.5, vjust = 0) +
-  # geom_text(x = 14, y = min(agg_alt_dat[[col]]),
-  #           label = paste("Correlation:", round(rho, 3)),
-  #           color = "black", size = 3.5, vjust = -1) +
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(size = 15),
@@ -191,8 +195,11 @@ p2 =  agg_alt_dat %>%
 
 p3 =  agg_alt_dat %>%
   ggplot(aes(x = Wave, y = `Frequently washing hands`)) +
-  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation")) +
-  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Frequently washing hands`, color = "Original aggregation")) +
+  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation"),
+            linewidth = 1.25) +
+  geom_line(data = standard_dat_selected,
+            aes(x = Wave, y = `Frequently washing hands`, color = "Original aggregation"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Alternative aggregation" = "darkslateblue", "Original aggregation" = "orange")) +
   labs(x = "Survey wave",
        y = "Adherence",
@@ -204,9 +211,6 @@ p3 =  agg_alt_dat %>%
                      standard_dat_selected$`Frequently washing hands`)) - 0.05,  # Place slightly below the minimum value
            label = paste("Correlation:", 0.998),
            color = "black", size = 5, hjust = 0.5, vjust = 0) +
-  # geom_text(x = 14, y = min(agg_alt_dat[[col]]),
-  #           label = paste("Correlation:", round(rho, 3)),
-  #           color = "black", size = 3.5, vjust = -1) +
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(size = 15),
@@ -223,8 +227,12 @@ p3 =  agg_alt_dat %>%
 
 p4 =  agg_alt_dat %>%
   ggplot(aes(x = Wave, y = `Wearing a face mask when outside of your home`)) +
-  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation")) +
-  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Wearing a face mask when outside of your home`, color = "Original aggregation")) +
+  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation"),
+            linewidth = 1.25) +
+  geom_line(data = standard_dat_selected,
+            aes(x = Wave,  y = `Wearing a face mask when outside of your home`,
+                color = "Original aggregation"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Alternative aggregation" = "darkslateblue", "Original aggregation" = "orange")) +
   labs(x = "Survey wave",
        y = "Adherence",
@@ -236,9 +244,6 @@ p4 =  agg_alt_dat %>%
                      standard_dat_selected$`Wearing a face mask when outside of your home`)) - 0.05,  # Place slightly below the minimum value
            label = paste("Correlation:", 0.998),
            color = "black", size = 5, hjust = 0.5, vjust = 0) +
-  # geom_text(x = 14, y = min(agg_alt_dat[[col]]),
-  #           label = paste("Correlation:", round(rho, 3)),
-  #           color = "black", size = 3.5, vjust = -1) +
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(size = 15),
@@ -255,8 +260,12 @@ p4 =  agg_alt_dat %>%
 
 p5 =  agg_alt_dat %>%
   ggplot(aes(x = Wave, y = `Been in a room with at least 5 people outside of household in the past 24 hours`)) +
-  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation")) +
-  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Been in a room with 5-10 people outside of household in the past 24 hours`, color = "Original aggregation")) +
+  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation"),
+            linewidth = 1.25) +
+  geom_line(data = standard_dat_selected,
+            aes(x = Wave, y = `Been in a room with 5-10 people outside of household in the past 24 hours`,
+                color = "Original aggregation"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Alternative aggregation" = "darkslateblue", "Original aggregation" = "orange")) +
   labs(x = "Survey wave",
        y = "Adherence",
@@ -284,8 +293,10 @@ p5 =  agg_alt_dat %>%
 
 p6 =  agg_alt_dat %>%
   ggplot(aes(x = Wave, y = `Been in a room with at least 11 people outside of household in the past 24 hours`)) +
-  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation")) +
-  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Been in a room with 11-50 people outside of household in the past 24 hours`, color = "Original aggregation")) +
+  geom_line(data = agg_alt_dat, aes(color = "Alternative aggregation"),
+            linewidth = 1.25) +
+  geom_line(data = standard_dat_selected, aes(x = Wave, y = `Been in a room with 11-50 people outside of household in the past 24 hours`, color = "Original aggregation"),
+            linewidth = 1.25) +
   scale_color_manual(values = c("Alternative aggregation" = "darkslateblue", "Original aggregation" = "orange")) +
   labs(x = "Survey wave",
        y = "Adherence",
