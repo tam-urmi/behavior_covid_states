@@ -60,7 +60,7 @@ dat_AK = dat %>% filter(state == "AK", end_date <= as_date("2022-04-01"))
 p1 = dat_MA %>%
   ggplot(aes(x = as_date(end_date))) +
   geom_line(aes(y = avoid_contact, color = "Behavior"),
-            linetype = "dashed",
+            linetype = "solid",
             linewidth = 0.75,
             show.legend = FALSE) +
   geom_line(data = osi_states_date_updated %>%
@@ -69,8 +69,9 @@ p1 = dat_MA %>%
                 y = StringencyIndex_Average,
                 color = "OSI"),
             linewidth = 0.75,
+            linetype = "dashed",
             show.legend = FALSE) +
-  scale_color_manual(NULL, values = c("OSI" = "#95D2EC", "Behavior" = "orange")) +
+  scale_color_manual(NULL, values = c("OSI" = "#0090ab", "Behavior" = "#095786")) +
   labs(title = "Massachusetts / Avoid Contact", x = "", y = "% Adherence / OSI") +
   scale_y_continuous(limits = c(20, 80), breaks = c(20, 40, 60, 80)) +
   scale_x_date(limits = c(as_date("2020-04-01"), as_date("2022-03-31")),
@@ -95,7 +96,7 @@ p1 = dat_MA %>%
 p2 =  dat_VA %>%
   ggplot(aes(x = as_date(end_date))) +
   geom_line(aes(y = avoid_contact, color = "Behavior"),
-            linetype = "dashed",
+            linetype = "solid",
             linewidth = 0.75,
             show.legend = "FALSE") +
   geom_line(data = osi_states_date_updated %>%
@@ -104,8 +105,9 @@ p2 =  dat_VA %>%
                 y = StringencyIndex_Average,
                 color = "OSI"),
             linewidth = 0.75,
+            linetype = "dashed",
             show.legend = FALSE) +
-  scale_color_manual(values = c("OSI" = "#95D2EC", "Behavior" = "orange")) +
+  scale_color_manual(NULL, values = c("OSI" = "#0090ab", "Behavior" = "#095786")) +
   labs(title = "Virginia / Avoid Contact", x = "", y = "% Adherence / OSI") +
   scale_y_continuous(limits = c(18, 80), breaks = c(20, 40, 60, 80)) +
   scale_x_date(limits = c(as_date("2020-04-01"), as_date("2022-03-31")),
@@ -128,8 +130,8 @@ p2 =  dat_VA %>%
 p3 =  dat_LA %>%
   ggplot(aes(x = as_date(end_date), color = state, group = state)) +
   geom_line(aes(y = avoid_contact),
-            color = "orange",
-            linetype = "dashed",
+            color = "#ae0000",
+            linetype = "solid",
             linewidth = 0.75,
             show.legend = FALSE) +
   geom_line(data = osi_states_date_updated %>%
@@ -138,8 +140,9 @@ p3 =  dat_LA %>%
                 y = StringencyIndex_Average,
                 group = state),
             linewidth = 0.75,
+            linetype = "dashed",
             show.legend = FALSE) +
-  scale_color_manual(NULL, values = c("LA" = "#FF2424")) +
+  scale_color_manual(NULL, values = c("LA" = "#db4646")) +
   labs(title = "Louisiana / Avoid Contact", x = "", y = "% Adherence / OSI") +
   scale_y_continuous(limits = c(20, 80), breaks = c(20, 40, 60, 80)) +
   scale_x_date(limits = c(as_date("2020-04-01"), as_date("2022-03-31")),
@@ -161,8 +164,8 @@ p3 =  dat_LA %>%
 
 p4 =  dat_NE %>%
   ggplot(aes(x = as_date(end_date), color = state, group = state)) +
-  geom_line(aes(y = avoid_contact), color = "orange",
-            linetype = "dashed",
+  geom_line(aes(y = avoid_contact), color = "#ae0000",
+            linetype = "solid",
             linewidth = 0.75) +
   geom_line(data = osi_states_date_updated %>%
               filter(state == "NE"),
@@ -170,8 +173,9 @@ p4 =  dat_NE %>%
                 y = StringencyIndex_Average,
                 group = state),
             linewidth = 0.75,
+            linetype = "dashed",
             show.legend = FALSE) +
-  scale_color_manual(NULL, values = c("NE" = "#FF2424")) +
+  scale_color_manual(NULL, values = c("NE" = "#db4646")) +
   labs(title = "Nebraska / Avoid Contact", x = "", y = "% Adherence / OSI") +
   scale_y_continuous(limits = c(15, 80), breaks = c(20, 40, 60, 80)) +
   scale_x_date(limits = c(as_date("2020-04-01"), as_date("2022-03-31")),
@@ -194,7 +198,7 @@ p4 =  dat_NE %>%
 p5 =  dat_AK %>%
   ggplot(aes(x = as_date(end_date), color = state, group = state)) +
   geom_line(aes(y = avoid_contact, color = "Behavior"),
-            linetype = "dashed",
+            linetype = "solid",
             linewidth = 0.75) +
   geom_line(data = osi_states_date_updated %>%
               filter(state == "AK"),
@@ -203,8 +207,9 @@ p5 =  dat_AK %>%
                 group = state,
                 color = "OSI"),
             linewidth = 0.75,
+            linetype = "dashed",
             show.legend = TRUE) +
-  scale_color_manual(NULL, values = c("OSI" = "#FF2424", "Behavior" = "orange")) +
+  scale_color_manual(NULL, values = c("OSI" = "#db4646", "Behavior" = "#ae0000")) +
   labs(title = "Alaska / Avoid Contact", x = "", y = "% Adherence / OSI") +
   scale_y_continuous(limits = c(18, 80), breaks = c(20, 40, 60, 80)) +
   scale_x_date(limits = c(as_date("2020-04-01"), as_date("2022-03-31")),
@@ -212,8 +217,8 @@ p5 =  dat_AK %>%
                date_labels = " %b \n%Y",
                expand = c(0, 0)) +
   guides(color =
-           guide_legend(override.aes = list(color = c("orange", "purple"),
-                                            linetype = c("dashed", "solid")))) +
+           guide_legend(override.aes = list(color = c("black", "black"),
+                                            linetype = c("solid", "dashed")))) +
   coord_cartesian(clip = "off") +
   theme(
     axis.text = element_text(size = 10),
@@ -228,14 +233,12 @@ p5 =  dat_AK %>%
     legend.position="bottom",
     legend.key.size = unit(1, "cm") )
 
-p5
-
 (p1 + p2) / (p3 + p4) / (p5 + plot_spacer()) +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom",
         legend.text = element_text(size = 14))
 
-ggsave(filename = "../covid_states_behavior1/figures/supplementary/OSI_avoid_contact_timeseries_v5.png", width = 8, height = 7, units = "in", bg = "white")
+ggsave(filename = "../covid_states_behavior1/figures/supplementary/OSI_avoid_contact_timeseries_v6.png", width = 8, height = 7, units = "in", bg = "white")
 
 ## Plotting OSI trajectories over time for each state
 osi_states_date_updated = osi_states_date_updated %>%

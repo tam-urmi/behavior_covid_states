@@ -19,9 +19,9 @@ library(patchwork)
 # Load data --------------------------------------------------------------------
 
 # Monthly data
-cases = read_csv("data/severity/monthly/all_state_official_case_cnt.csv", show_col_types = FALSE)
-deaths = read_csv("data/severity/monthly/death_agg_all_state_prior7_14_&_30.csv", show_col_types = FALSE)
-hosps = read_csv("data/severity/monthly/hospitalization_state_monthly.csv")
+cases = read_csv("../covid_states_behavior/data/severity/monthly/all_state_official_case_cnt.csv", show_col_types = FALSE)
+deaths = read_csv("../covid_states_behavior/data/severity/monthly/death_agg_all_state_prior7_14_&_30.csv", show_col_types = FALSE)
+hosps = read_csv("../covid_states_behavior/data/severity/monthly/hospitalization_state_monthly.csv")
 
 hosps[is.na(hosps) == T] = 0
 deaths[is.na(deaths) == T] = 0
@@ -115,9 +115,9 @@ ggplot(melted_us_monthly_cor_mat,
     legend.text = element_text(size = 8),
     legend.key.height = unit(1, "lines"),
     legend.position="right")
-
-ggsave(filename = "figures/for_manuscript/cor_heatmap_us.png", height = 4,
-       width = 6.5, units = "in", bg = "white")
+#
+# ggsave(filename = "figures/for_manuscript/cor_heatmap_us.png", height = 4,
+#        width = 6.5, units = "in", bg = "white")
 
 # National plot with cases as the reference signal -----------------------------
 melted_us_monthly_cor_mat %>%
@@ -147,8 +147,8 @@ melted_us_monthly_cor_mat %>%
     legend.key.height = unit(1, "lines"),
     legend.position="right")
 
-ggsave(filename = "figures/for_manuscript/cor_heatmap_us_cases_ref.png", height = 4,
-       width = 6.5, units = "in", bg = "white")
+# ggsave(filename = "figures/for_manuscript/cor_heatmap_us_cases_ref.png", height = 4,
+#        width = 6.5, units = "in", bg = "white")
 
 
 # Plots for each state ---------------------------------------------------------
@@ -311,7 +311,7 @@ for(state in unique_states[!unique_states == "DC"]){
     cor(tmp_mat, use = "pairwise.complete.obs")
   })
 
-  var_order = c("Cases", "Deaths", "Hosps.", "Cases (-1)", "Deaths (-1)",
+  var_order = c("Cases (0)", "Deaths (0)", "Hosps. (0)", "Cases (-1)", "Deaths (-1)",
                 "Hosps. (-1)", "Cases (-2)", "Deaths (-2)", "Hosps. (-2)",
                 "Cases (+1)", "Deaths (+1)", "Hosps. (+1)", "Cases (+2)",
                 "Deaths (+2)", "Hosps. (+2)")
@@ -346,8 +346,8 @@ for(state in unique_states[!unique_states == "DC"]){
       legend.key.height = unit(1, "lines"),
       legend.position="right")
 
-  ggsave(filename = paste0("figures/for_manuscript/state_severity_heatmaps/",state,".png"),
-         height = 4, width = 6.5, units = "in", bg = "white")
+  # ggsave(filename = paste0("figures/supplementary/state_severity_heatmaps/",state,".png"),
+  #        height = 4, width = 6.5, units = "in", bg = "white")
 
   print(paste0("State ",state," completed"))
 
@@ -358,11 +358,18 @@ for(state in unique_states[!unique_states == "DC"]){
 # First build the dataset - we need to combine national level row with the case
 # row for each state
 
-us_corplot_row_dat = melted_us_monthly_cor_mat %>% filter(Var2 == "Cases", Var1 != "Cases") %>%
-  mutate(region = "US")
+us_corplot_row_dat = melted_us_monthly_cor_mat %>%
+  filter(Var2 == "Cases", Var1 != "Cases") %>%
+  mutate(region = "US",
+         Var1 = case_when(Var1 == "Deaths" ~ "Deaths (0)",
+                          Var1 == "Hosps." ~ "Hosps. (0)",
+                          TRUE ~ Var1),
+         Var2 = "Cases (0)")
+
 
 state_corplot_rows = NULL
 for(state in unique_states[!unique_states == "DC"]){
+  state == "AL"
   tmp_state_cases = cases %>% select(month_yr, state_code, case_cnt) %>%
     filter(state_code == state)
 
@@ -382,23 +389,24 @@ for(state in unique_states[!unique_states == "DC"]){
     left_join(tmp_state_hosps, by = "month_yr") %>%
     mutate(month_yr = ym(month_yr)) %>%
     select(month_yr, case_cnt, death_agg30, monthly_hospitalization) %>%
-    rename(Cases = case_cnt,
-           Deaths = death_agg30,
-           `Hosps.` = monthly_hospitalization)
+    rename(`Cases (0)` = case_cnt,
+           `Deaths (0)` = death_agg30,
+           `Hosps. (0)` = monthly_hospitalization)
+
 
   tmp_mat = tmp_state_merged %>%
-    mutate(`Cases (-1)` = lag(Cases, 1),
-           `Cases (-2)` = lag(Cases, 2),
-           `Cases (+1)` = lead(Cases, 1),
-           `Cases (+2)` = lead(Cases, 2),
-           `Deaths (-1)` = lag(Deaths, 1),
-           `Deaths (-2)` = lag(Deaths, 2),
-           `Deaths (+1)` = lead(Deaths, 1),
-           `Deaths (+2)` = lead(Deaths, 2),
-           `Hosps. (-1)`= lag(`Hosps.`, 1),
-           `Hosps. (-2)` = lag(`Hosps.`, 2),
-           `Hosps. (+1)` = lead(`Hosps.`, 1),
-           `Hosps. (+2)`= lead(`Hosps.`, 2)) %>%
+    mutate(`Cases (-1)` = lag(`Cases (0)`, 1),
+           `Cases (-2)` = lag(`Cases (0)`, 2),
+           `Cases (+1)` = lead(`Cases (0)`, 1),
+           `Cases (+2)` = lead(`Cases (0)`, 2),
+           `Deaths (-1)` = lag(`Deaths (0)`, 1),
+           `Deaths (-2)` = lag(`Deaths (0)`, 2),
+           `Deaths (+1)` = lead(`Deaths (0)`, 1),
+           `Deaths (+2)` = lead(`Deaths (0)`, 2),
+           `Hosps. (-1)`= lag(`Hosps. (0)`, 1),
+           `Hosps. (-2)` = lag(`Hosps. (0)`, 2),
+           `Hosps. (+1)` = lead(`Hosps. (0)`, 1),
+           `Hosps. (+2)`= lead(`Hosps. (0)`, 2)) %>%
     select(-month_yr)
 
   tmp_mat_cor = tryCatch({
@@ -407,38 +415,43 @@ for(state in unique_states[!unique_states == "DC"]){
     cor(tmp_mat, use = "pairwise.complete.obs")
   })
 
-  var_order = c("Cases", "Deaths", "Hosps.", "Cases (-1)", "Deaths (-1)",
+
+  var_order = c("Cases (0)", "Deaths (0)", "Hosps. (0)", "Cases (-1)", "Deaths (-1)",
                 "Hosps. (-1)", "Cases (-2)", "Deaths (-2)", "Hosps. (-2)",
                 "Cases (+1)", "Deaths (+1)", "Hosps. (+1)", "Cases (+2)",
                 "Deaths (+2)", "Hosps. (+2)")
 
   tmp_mat_cor_ordered = tmp_mat_cor[var_order, var_order]
+  tmp_mat_cor_ordered
+
   tmp_mat_cor_ordered[upper.tri(tmp_mat_cor_ordered)] = NA
   melted_tmp_mat_cor = reshape2::melt(tmp_mat_cor_ordered, na.rm = TRUE)
-  tmp_corplot_state_row = melted_tmp_mat_cor %>% filter(Var2 == "Cases", Var1 != "Cases") %>%
+  tmp_corplot_state_row = melted_tmp_mat_cor %>% filter(Var2 == "Cases (0)", Var1 != "Cases (0)") %>%
     mutate(region = state)
-
+  tmp_corplot_state_row
   state_corplot_rows = bind_rows(state_corplot_rows, tmp_corplot_state_row)
-
   print(paste0("State ",state," completed"))
 
 }
 
 corplot_rows_all = bind_rows(us_corplot_row_dat, state_corplot_rows)
 
+
 corplot_rows_all$region = factor(corplot_rows_all$region, levels = rev(c("US", sort(unique(corplot_rows_all$region[corplot_rows_all$region != "US"])))))
 
 all_var1_values = unique(corplot_rows_all$Var1)
-
 all_var1_values = all_var1_values[-1]
-all_var1_values
 
 corplot_rows_all = corplot_rows_all %>%
   tidyr::complete(Var1 = all_var1_values, region = unique(corplot_rows_all$region), fill = list(value = NA))
-corplot_rows_all = corplot_rows_all %>% filter(Var1 != "Cases")
+
+corplot_rows_all = corplot_rows_all %>%
+  mutate(Var1 = factor(Var1, levels = c("Deaths (0)", "Hosps. (0)", "Cases (-1)", "Deaths (-1)", "Hosps. (-1)",
+                                        "Cases (-2)", "Deaths (-2)", "Hosps. (-2)", "Cases (+1)", "Deaths (+1)",
+                                        "Hosps. (+1)", "Cases (+2)", "Deaths (+2)", "Hosps. (+2)"))) %>%
+  arrange(Var1, desc(region))
 
 # Heatmap ----------------------------------------------------------------------
-
 corplot_rows_all %>%
   filter(!is.na(value)) %>%
   ggplot(aes(Var1, region, fill = value)) +
@@ -465,4 +478,4 @@ corplot_rows_all %>%
     legend.key.height = unit(1, "lines"),
     legend.position="bottom")
 
-ggsave("figures/for_manuscript/national_and_state_case_corplot.png", width = 10, height = 15, units = "in", bg = "white")
+ggsave("figures/supplementary/national_and_state_case_corplot_v2.png", width = 10, height = 15, units = "in", bg = "white")

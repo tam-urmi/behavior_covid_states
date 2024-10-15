@@ -27,6 +27,74 @@ cor_tbl = cor_tbl %>%
                                "Risk-averting",
                                "Risk-exposing"))
 
+cor_tbl %>%
+  filter(severity_type == "mortality",
+         behavior == "Avoiding contact with other people") %>%
+  select(-behavior_cat) %>%
+  rowwise() %>%
+  mutate(
+    max_lag = colnames(select(., starts_with("lag")))[which.max(c_across(starts_with("lag")))]
+  ) %>%
+  ungroup() %>%
+  count(max_lag)
+
+
+cor_tbl %>%
+  filter(severity_type == "cases",
+         behavior == "Avoiding contact with other people") %>%
+  select(-behavior_cat) %>%
+  rowwise() %>%
+  mutate(
+    max_lag = colnames(select(., starts_with("lag")))[which.max(c_across(starts_with("lag")))]
+  ) %>%
+  ungroup() %>%
+  count(max_lag)
+
+cor_tbl %>%
+  filter(severity_type == "hospitalization",
+         behavior == "Avoiding contact with other people") %>%
+  select(-behavior_cat) %>%
+  rowwise() %>%
+  mutate(
+    max_lag = colnames(select(., starts_with("lag")))[which.max(c_across(starts_with("lag")))]
+  ) %>%
+  ungroup() %>%
+  count(max_lag)
+
+cor_tbl %>%
+  filter(severity_type == "mortality",
+         behavior == "Avoiding contact with other people") %>%
+  select(-behavior_cat) %>%
+  rowwise() %>%
+  mutate(
+    max_lag = colnames(select(., starts_with("lag")))[which.max(c_across(starts_with("lag")))]
+  ) %>%
+  ungroup() %>%
+  count(max_lag)
+
+# Go visit a friend
+cor_tbl %>%
+  filter(severity_type == "cases",
+         behavior == "Avoiding contact with other people") %>%
+  select(-behavior_cat) %>%
+  rowwise() %>%
+  mutate(
+    max_lag = colnames(select(., starts_with("lag")))[which.max(c_across(starts_with("lag")))]
+  ) %>%
+  ungroup() %>%
+  count(max_lag)
+
+cor_tbl %>%
+  filter(severity_type == "hospitalization",
+         behavior == "Avoiding contact with other people") %>%
+  select(-behavior_cat) %>%
+  rowwise() %>%
+  mutate(
+    max_lag = colnames(select(., starts_with("lag")))[which.max(c_across(starts_with("lag")))]
+  ) %>%
+  ungroup() %>%
+  count(max_lag)
+
 # Create the lag 0 only dataset
 
 cor_tbl_lag0 = cor_tbl %>% select(behavior, severity_type, state, lag0, behavior_cat)
