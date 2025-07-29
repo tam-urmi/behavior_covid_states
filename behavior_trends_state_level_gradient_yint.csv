@@ -1,0 +1,766 @@
+,behaviors,slope,y-intercept,state,political_aff,behavior_type
+0,Avoiding contact with other people,-1.2995487219155042,57.439642141817814,Alabama,REP,Risk-averting
+1,Avoiding public or crowded places,-1.417708843548851,65.83835491026403,Alabama,REP,Risk-averting
+2,Frequently washing hands,-0.5744076593296308,78.14842405879666,Alabama,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.310563009636633,77.41247374091037,Alabama,REP,Risk-averting
+4,Go to work,0.18899120470083786,33.183443378825835,Alabama,REP,Risk-seeking
+5,Go to the gym,0.29274193022655587,3.8547873923987206,Alabama,REP,Risk-seeking
+6,Go visit a friend,0.5781523043298771,14.936145027419832,Alabama,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5064793991926191,13.494372347954808,Alabama,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.26157103813914523,11.105651407789349,Alabama,REP,Risk-seeking
+9,Go to church or another place of worship,0.36581755849074266,6.7416513110837615,Alabama,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.031225971542437683,1.2055177060519546,Alabama,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.5511546547633496,41.30363020945871,Alabama,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.23603158557809237,8.752372235263216,Alabama,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.13896900777351123,3.4154737418032926,Alabama,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.19807014179909488,0.9271043028501995,Alabama,REP,Risk-seeking
+0,Avoiding contact with other people,-1.2199626013327398,50.76316220409272,Alaska,REP,Risk-averting
+1,Avoiding public or crowded places,-1.5700259166566428,63.56963716530778,Alaska,REP,Risk-averting
+2,Frequently washing hands,-0.5927269079552593,72.05697296320267,Alaska,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.5716278840838145,74.75799376690702,Alaska,REP,Risk-averting
+4,Go to work,0.11046094071337817,37.56818633871991,Alaska,REP,Risk-seeking
+5,Go to the gym,0.39380757962104435,2.6939452655655547,Alaska,REP,Risk-seeking
+6,Go visit a friend,0.33371297963446284,19.99485689523364,Alaska,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.8016296785318069,7.78005670407177,Alaska,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.03496664799438795,12.554379118459224,Alaska,REP,Risk-seeking
+9,Go to church or another place of worship,0.20901897940650122,3.520424777945311,Alaska,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.12051656324373733,0.6573987692113208,Alaska,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.5335044697047641,44.023072636587145,Alaska,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.15381732548723176,8.806271109000425,Alaska,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2177744261764795,3.682989556300586,Alaska,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1483897123706766,0.7534664082502358,Alaska,REP,Risk-seeking
+0,Avoiding contact with other people,-1.5184796804871041,59.559266745662065,Arizona,IND,Risk-averting
+1,Avoiding public or crowded places,-1.5514890663676073,67.07473497269471,Arizona,IND,Risk-averting
+2,Frequently washing hands,-0.7363976129277617,78.8639413149084,Arizona,IND,Risk-averting
+3,Wearing a face mask when outside of your home,-1.2519347056326902,76.64794754224847,Arizona,IND,Risk-averting
+4,Go to work,0.31011524005790764,32.40057721400024,Arizona,IND,Risk-seeking
+5,Go to the gym,0.4252888562178733,3.631291544783923,Arizona,IND,Risk-seeking
+6,Go visit a friend,0.5853659279491662,12.295268434292705,Arizona,IND,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7172962803071598,11.592766733754774,Arizona,IND,Risk-seeking
+8,Go to a doctor or visit a hospital,0.12306216880706577,11.9659549005514,Arizona,IND,Risk-seeking
+9,Go to church or another place of worship,0.23608331637751312,3.4715035799157232,Arizona,IND,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.1314084422707066,3.377658426928826,Arizona,IND,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7747247372588066,35.48970857973494,Arizona,IND,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.19250542712015667,8.753879248025985,Arizona,IND,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.22258187352695677,2.358637969057183,Arizona,IND,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.16111818336120243,1.3222429088125702,Arizona,IND,Risk-seeking
+0,Avoiding contact with other people,-1.2050264534119197,52.40706811054345,Arkansas,REP,Risk-averting
+1,Avoiding public or crowded places,-1.295525779708945,61.340646300164174,Arkansas,REP,Risk-averting
+2,Frequently washing hands,-0.5925955464565883,73.59391530362586,Arkansas,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.5274366839501519,74.47595021168044,Arkansas,REP,Risk-averting
+4,Go to work,0.08765496014008434,35.38832854263553,Arkansas,REP,Risk-seeking
+5,Go to the gym,0.275857525201523,3.491394573898919,Arkansas,REP,Risk-seeking
+6,Go visit a friend,0.523339439217347,15.882128196589672,Arkansas,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6388687703226741,10.605152648458459,Arkansas,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.18916622298727137,10.772734134795616,Arkansas,REP,Risk-seeking
+9,Go to church or another place of worship,0.43449181322219543,4.393920027481791,Arkansas,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.04364001445650642,0.7808507818105354,Arkansas,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7732921690565094,38.80806392224926,Arkansas,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.1784928154104438,9.398822951411194,Arkansas,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.245039721300052,2.9069077142787956,Arkansas,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.16788369835659372,1.3500122587188446,Arkansas,REP,Risk-seeking
+0,Avoiding contact with other people,-1.6000322086179304,69.72637030261157,California,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.7115308678093113,77.65284167116798,California,DEM,Risk-averting
+2,Frequently washing hands,-0.5450769679483457,78.57296476759828,California,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.0153687028247327,86.19204178969845,California,DEM,Risk-averting
+4,Go to work,0.42701958871629997,30.74025218607262,California,DEM,Risk-seeking
+5,Go to the gym,0.5218637816366004,1.4580239313063412,California,DEM,Risk-seeking
+6,Go visit a friend,0.5220578885955115,10.541289359331977,California,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.9053198542362723,6.991857457401865,California,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17391771485774235,9.306643644453565,California,DEM,Risk-seeking
+9,Go to church or another place of worship,0.31878422365958214,1.2731432305153163,California,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.15958048569488775,2.1201435483475004,California,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.948846714191577,27.46411073989237,California,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.33191742441093736,5.598824051446922,California,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2655683434880871,0.7340370950353021,California,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.15267997258014554,0.007944635466437866,California,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.5872730863505997,56.88690394104651,Colorado,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.773110063620092,66.48674773285796,Colorado,DEM,Risk-averting
+2,Frequently washing hands,-0.508362833883547,71.99022712534895,Colorado,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6780283790008528,79.9256226960388,Colorado,DEM,Risk-averting
+4,Go to work,0.6763520105931748,29.3640831792684,Colorado,DEM,Risk-seeking
+5,Go to the gym,0.49122785939675817,3.2195556765933526,Colorado,DEM,Risk-seeking
+6,Go visit a friend,0.5206195447418822,13.680007799587639,Colorado,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.8146530464008662,9.328879959091564,Colorado,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.20372024598710703,9.33722003958641,Colorado,DEM,Risk-seeking
+9,Go to church or another place of worship,0.19615405272703482,3.532822162270645,Colorado,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.12170543283420387,2.1383014461725387,Colorado,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.0982726403574268,35.38582949249647,Colorado,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.29467765560735903,8.993323441534287,Colorado,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2507337900147849,3.172562347786836,Colorado,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.15812245338891368,0.8823554083444822,Colorado,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.49564731734262,61.64284530030374,Connecticut,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.8149201861539537,75.39492558633238,Connecticut,DEM,Risk-averting
+2,Frequently washing hands,-0.7747850113241017,81.13746279006084,Connecticut,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.3840479726401325,88.97502836374933,Connecticut,DEM,Risk-averting
+4,Go to work,0.42178958979570413,31.333849061779276,Connecticut,DEM,Risk-seeking
+5,Go to the gym,0.5225067381509384,1.7523651555176443,Connecticut,DEM,Risk-seeking
+6,Go visit a friend,0.6690410084647359,11.629705872220146,Connecticut,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7209212905812876,8.159744942928487,Connecticut,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.28200085648900425,9.290532222981174,Connecticut,DEM,Risk-seeking
+9,Go to church or another place of worship,0.22420390957567826,3.282772265465018,Connecticut,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.03190015431230053,3.3209446270054466,Connecticut,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.1028507435864063,32.335245532679565,Connecticut,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.39523731966417225,5.687196505680734,Connecticut,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3829041047911935,1.227767850222648,Connecticut,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1149769038467332,1.0887416366859077,Connecticut,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.745637825924959,66.28811249164937,Delaware,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.8532283883328808,76.55832999802149,Delaware,DEM,Risk-averting
+2,Frequently washing hands,-0.8957918239551698,82.59857658754875,Delaware,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.9539495440430972,93.07496478502208,Delaware,DEM,Risk-averting
+4,Go to work,0.34047930025477935,29.410639492647814,Delaware,DEM,Risk-seeking
+5,Go to the gym,0.31098516811160193,3.889754414753485,Delaware,DEM,Risk-seeking
+6,Go visit a friend,0.32496873456466213,11.978167650516863,Delaware,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6542725416696552,8.286139732132481,Delaware,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.034276860555336824,10.193645697449137,Delaware,DEM,Risk-seeking
+9,Go to church or another place of worship,0.23901409769912885,1.7554857078763182,Delaware,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.0689720341439867,2.1908915667482622,Delaware,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7080094591326206,37.08523803350548,Delaware,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.3271797793069439,7.504707858915055,Delaware,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3014791081293935,1.32631177948761,Delaware,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.09349420981238833,0.7429661760231434,Delaware,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.5138700490767678,73.11603692845239,District of Columbia,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.4998707048245017,80.22095984038287,District of Columbia,DEM,Risk-averting
+2,Frequently washing hands,-0.5327213633371833,81.48530926874915,District of Columbia,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-0.7224516423479395,88.12257715167587,District of Columbia,DEM,Risk-averting
+4,Go to work,0.6730140611335982,21.03145003486511,District of Columbia,DEM,Risk-seeking
+5,Go to the gym,0.50880527935197,3.849789242474694,District of Columbia,DEM,Risk-seeking
+6,Go visit a friend,0.4401800447503683,11.73850353841801,District of Columbia,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7817506773436489,5.691151739323821,District of Columbia,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.0050980150781154854,11.736671752938946,District of Columbia,DEM,Risk-seeking
+9,Go to church or another place of worship,0.19869144647626172,3.418286919235612,District of Columbia,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.446156486260009,9.11709685282444,District of Columbia,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.2980303349797384,29.1649878131206,District of Columbia,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.39152497317103524,5.243224776157766,District of Columbia,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.33224425224375254,-0.2998145156301595,District of Columbia,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1886275441206641,-0.408189560849491,District of Columbia,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.418484392602759,62.98467035328761,Florida,REP,Risk-averting
+1,Avoiding public or crowded places,-1.5220548771839837,72.20383106845964,Florida,REP,Risk-averting
+2,Frequently washing hands,-0.7468038713039837,79.00433134760094,Florida,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.3998323888563082,84.60177369161887,Florida,REP,Risk-averting
+4,Go to work,0.16776923361785986,31.990444493037643,Florida,REP,Risk-seeking
+5,Go to the gym,0.3169099971690357,4.824339715955235,Florida,REP,Risk-seeking
+6,Go visit a friend,0.5946167745870445,10.69543069534504,Florida,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6724407857408218,11.11824671757553,Florida,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.18195446401682697,10.963974663584915,Florida,REP,Risk-seeking
+9,Go to church or another place of worship,0.34182499088655305,3.1429866585619015,Florida,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.017832296150603374,2.4106858024249775,Florida,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.691850928717537,33.6684399618004,Florida,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.15502207756272307,8.012568268601317,Florida,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.19917422073327412,2.3798700724232527,Florida,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.15232670849137103,0.7402639759183565,Florida,REP,Risk-seeking
+0,Avoiding contact with other people,-1.3566548086997172,62.03039502899817,Georgia,IND,Risk-averting
+1,Avoiding public or crowded places,-1.2632525916731738,67.5610718537228,Georgia,IND,Risk-averting
+2,Frequently washing hands,-0.6393063649947196,79.17600203517868,Georgia,IND,Risk-averting
+3,Wearing a face mask when outside of your home,-0.8980479053208057,75.36722854112597,Georgia,IND,Risk-averting
+4,Go to work,0.25316832350235,32.661414912460174,Georgia,IND,Risk-seeking
+5,Go to the gym,0.3491196358835192,4.399282198020304,Georgia,IND,Risk-seeking
+6,Go visit a friend,0.3239069109479601,14.545781904158568,Georgia,IND,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5044555889415027,13.569138758827489,Georgia,IND,Risk-seeking
+8,Go to a doctor or visit a hospital,0.20929471741572234,11.378838742373436,Georgia,IND,Risk-seeking
+9,Go to church or another place of worship,0.35332935966621165,4.626534420246262,Georgia,IND,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.08423206552676901,2.1293838326292143,Georgia,IND,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7437845781274202,34.4407610884224,Georgia,IND,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.16767622375007019,8.440767287369829,Georgia,IND,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.203368538091914,2.062633449232335,Georgia,IND,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.15223674074171084,0.7968941804589913,Georgia,IND,Risk-seeking
+0,Avoiding contact with other people,-1.3812948342485598,63.651946315362814,Hawaii,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.4224445100254686,72.86202193123906,Hawaii,DEM,Risk-averting
+2,Frequently washing hands,-0.6412486369692079,79.64971313147626,Hawaii,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-0.7844827594271245,88.06168559992928,Hawaii,DEM,Risk-averting
+4,Go to work,0.1223271829221867,36.86801542032877,Hawaii,DEM,Risk-seeking
+5,Go to the gym,0.2997114708036055,2.5635822643869846,Hawaii,DEM,Risk-seeking
+6,Go visit a friend,0.20631427412739217,14.389759370400984,Hawaii,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.56812924061638,8.51488958760237,Hawaii,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.15204874144588282,9.963622526989802,Hawaii,DEM,Risk-seeking
+9,Go to church or another place of worship,0.2182710513758842,2.710060274871651,Hawaii,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.07753945777669652,4.434315659876146,Hawaii,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.5882439569483149,35.22606639631477,Hawaii,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.10983922170012307,10.385504382295643,Hawaii,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2654272575382989,1.8247010273757227,Hawaii,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.12012131805754854,0.7029976668281082,Hawaii,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.1723558882860903,44.895604417057875,Idaho,REP,Risk-averting
+1,Avoiding public or crowded places,-1.5045183818908647,56.493973581688756,Idaho,REP,Risk-averting
+2,Frequently washing hands,-0.5727538335090896,70.42586717736916,Idaho,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.4638748396923846,61.64143249814694,Idaho,REP,Risk-averting
+4,Go to work,0.06862119687949111,39.174630116714425,Idaho,REP,Risk-seeking
+5,Go to the gym,0.302837265583782,4.4466180419095895,Idaho,REP,Risk-seeking
+6,Go visit a friend,0.2824804366741481,19.194000970186845,Idaho,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5836995500746808,13.587812277311746,Idaho,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.10997485898293095,12.558556001381351,Idaho,REP,Risk-seeking
+9,Go to church or another place of worship,0.24882805792252066,4.756737889548274,Idaho,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.01993838630815452,1.2528981235828314,Idaho,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6108824882951959,45.75847417617476,Idaho,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.17637567873707824,10.945998353564683,Idaho,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.21415493856241768,4.742545104686936,Idaho,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1984578457977174,2.1917374068712667,Idaho,REP,Risk-seeking
+0,Avoiding contact with other people,-1.4540922363605269,61.4041752939307,Illinois,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.6450773193493002,72.35393276951491,Illinois,DEM,Risk-averting
+2,Frequently washing hands,-0.8501696755891962,79.3104785704711,Illinois,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.1551114043079307,81.81230158072148,Illinois,DEM,Risk-averting
+4,Go to work,0.3192317374833898,31.768123027743258,Illinois,DEM,Risk-seeking
+5,Go to the gym,0.4631724814790809,2.6980359970728065,Illinois,DEM,Risk-seeking
+6,Go visit a friend,0.5364180797250475,12.280908347218771,Illinois,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6916962484673145,9.728973994074984,Illinois,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.19307080573589058,9.119206445102435,Illinois,DEM,Risk-seeking
+9,Go to church or another place of worship,0.28527676224175,2.6746545697983106,Illinois,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.1810093382606778,3.6656147804395776,Illinois,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9325154433692665,32.71696690726648,Illinois,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.27261910498090364,7.489162364129218,Illinois,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.28333109245975974,2.1447897220490733,Illinois,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.19311230145983443,-0.08212492047849551,Illinois,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.3837495231031334,53.21041541117471,Indiana,REP,Risk-averting
+1,Avoiding public or crowded places,-1.6256930360619193,65.18985943238107,Indiana,REP,Risk-averting
+2,Frequently washing hands,-0.6572366822240228,75.47484102064345,Indiana,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.5731015738859226,75.22838603705152,Indiana,REP,Risk-averting
+4,Go to work,0.051252590570282114,36.50979680431986,Indiana,REP,Risk-seeking
+5,Go to the gym,0.30259162340347945,2.9888152691198995,Indiana,REP,Risk-seeking
+6,Go visit a friend,0.45710957901424987,14.230544669938764,Indiana,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5479320672412629,14.719282424204508,Indiana,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.12390875522808897,10.717993376722346,Indiana,REP,Risk-seeking
+9,Go to church or another place of worship,0.32649576351025333,4.566734584972519,Indiana,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.09942183076508686,1.5317458451798978,Indiana,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.5932171896897104,41.327233581515145,Indiana,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.11866419866011503,11.034529804526048,Indiana,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.21786780036458206,2.9127143027705062,Indiana,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.10273034436643418,2.4593870892259764,Indiana,REP,Risk-seeking
+0,Avoiding contact with other people,-1.4211958730629641,50.7713223216763,Iowa,REP,Risk-averting
+1,Avoiding public or crowded places,-1.7160388105239992,64.42017198092074,Iowa,REP,Risk-averting
+2,Frequently washing hands,-0.8414321566962629,73.44107611628787,Iowa,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.5340982183176854,68.18277170363434,Iowa,REP,Risk-averting
+4,Go to work,0.17309121715093914,36.69459178203871,Iowa,REP,Risk-seeking
+5,Go to the gym,0.21731317604386674,4.336250227854949,Iowa,REP,Risk-seeking
+6,Go visit a friend,0.4971678138764226,15.185274056570583,Iowa,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7317405420938385,10.482189679909936,Iowa,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.003997038670740634,11.13806062476694,Iowa,REP,Risk-seeking
+9,Go to church or another place of worship,0.3851846396631343,2.3112918024046367,Iowa,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.03305943854843038,1.4013135273063813,Iowa,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7610027723659998,40.66509478074244,Iowa,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.20235377316768338,9.294332687448613,Iowa,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.38786623239974893,1.8447627892187448,Iowa,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.22576507438048812,0.6294846208767422,Iowa,REP,Risk-seeking
+0,Avoiding contact with other people,-1.521886969443069,54.60113801502576,Kansas,REP,Risk-averting
+1,Avoiding public or crowded places,-1.7380097973327366,65.9159821609577,Kansas,REP,Risk-averting
+2,Frequently washing hands,-0.7145323845910055,74.68145055068712,Kansas,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6477943886570952,74.48046692906121,Kansas,REP,Risk-averting
+4,Go to work,0.16921060368244495,37.78705816939621,Kansas,REP,Risk-seeking
+5,Go to the gym,0.33053781877212357,4.578477910417391,Kansas,REP,Risk-seeking
+6,Go visit a friend,0.5830173269577718,15.49063165662771,Kansas,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7173693396346914,13.09202917539602,Kansas,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.08755320797875325,10.875964849097937,Kansas,REP,Risk-seeking
+9,Go to church or another place of worship,0.3827508276592494,3.8081587052213726,Kansas,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.05991867263048733,1.0947297816519064,Kansas,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9078499535152589,41.00211557146531,Kansas,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2394534112127631,10.043247206014692,Kansas,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3780956443808268,2.368727832452568,Kansas,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.20405201516380886,1.7101903366566442,Kansas,REP,Risk-seeking
+0,Avoiding contact with other people,-1.4800757782879876,58.81178404612017,Kentucky,REP,Risk-averting
+1,Avoiding public or crowded places,-1.537262323081262,68.49622093175682,Kentucky,REP,Risk-averting
+2,Frequently washing hands,-0.6879984014585635,78.27657378312662,Kentucky,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.3427176736821356,74.94254136288069,Kentucky,REP,Risk-averting
+4,Go to work,0.04083494075531922,32.28710359443415,Kentucky,REP,Risk-seeking
+5,Go to the gym,0.19222093309929197,3.043473662986374,Kentucky,REP,Risk-seeking
+6,Go visit a friend,0.6156230516500001,12.127302011480431,Kentucky,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5977555335550973,10.004276129534404,Kentucky,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.22926398303888848,9.81389629558668,Kentucky,REP,Risk-seeking
+9,Go to church or another place of worship,0.4558410564790275,2.522690004825823,Kentucky,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.056161647914793764,1.1645523083432834,Kentucky,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7765957602375473,34.62911140890754,Kentucky,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.24415397868431768,7.821389414410685,Kentucky,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.30588063655111586,2.0739946773535873,Kentucky,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.16424232285665294,0.654819986816296,Kentucky,REP,Risk-seeking
+0,Avoiding contact with other people,-1.3254618814790393,59.62980504371437,Louisiana,REP,Risk-averting
+1,Avoiding public or crowded places,-1.3378270826255994,68.60405211092043,Louisiana,REP,Risk-averting
+2,Frequently washing hands,-0.6584366535765935,78.28855054505505,Louisiana,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-0.9714523151601313,74.36935575242322,Louisiana,REP,Risk-averting
+4,Go to work,0.1770307131328971,34.070843778096474,Louisiana,REP,Risk-seeking
+5,Go to the gym,0.2281611897371706,3.9607435562907667,Louisiana,REP,Risk-seeking
+6,Go visit a friend,0.5264461708388108,15.18592072556757,Louisiana,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6387280597055697,10.315942861934076,Louisiana,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.10580027584268263,13.128476017904138,Louisiana,REP,Risk-seeking
+9,Go to church or another place of worship,0.27851133581665066,6.215254597473789,Louisiana,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.014889593904739791,1.7878512195262655,Louisiana,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7169997860156871,36.41044988594109,Louisiana,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.17666890280005684,9.34603371407406,Louisiana,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.1725294045790977,3.6829458332167633,Louisiana,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.11003651377844996,1.1289270212358185,Louisiana,REP,Risk-seeking
+0,Avoiding contact with other people,-1.59623145002185,59.12917546383048,Maine,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.7272074236597916,72.03126608807821,Maine,DEM,Risk-averting
+2,Frequently washing hands,-0.5751002991929002,73.58336116900938,Maine,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.688022351823595,79.00075713167797,Maine,DEM,Risk-averting
+4,Go to work,0.20096489740452678,30.98963308481821,Maine,DEM,Risk-seeking
+5,Go to the gym,0.17094247009082714,2.6414148787444818,Maine,DEM,Risk-seeking
+6,Go visit a friend,0.2429203646770368,15.706957233339034,Maine,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.4490339128180268,7.183870825863653,Maine,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17743029497158883,9.398224923790016,Maine,DEM,Risk-seeking
+9,Go to church or another place of worship,0.13606349338911114,1.8186241688265468,Maine,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.03391943929847304,0.8458775566790415,Maine,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7080652500846987,38.03539200477299,Maine,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.22557849666214064,7.628364772767888,Maine,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.28460305900339455,1.627479656211975,Maine,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.14322968045821027,0.5888731699019991,Maine,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.5906179700971126,68.72821976133594,Maryland,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.789717604195039,80.89179049124553,Maryland,DEM,Risk-averting
+2,Frequently washing hands,-0.7706990975443764,83.19531596382754,Maryland,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.189583755247061,89.23108181742325,Maryland,DEM,Risk-averting
+4,Go to work,0.4158127410353452,29.644292217790454,Maryland,DEM,Risk-seeking
+5,Go to the gym,0.5227908084824703,2.571699665440918,Maryland,DEM,Risk-seeking
+6,Go visit a friend,0.49591027789234826,10.385727873573005,Maryland,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7518773483156447,6.312900556015714,Maryland,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.15434101689874927,9.51211625117105,Maryland,DEM,Risk-seeking
+9,Go to church or another place of worship,0.2957659826514502,2.5134511888982014,Maryland,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.16348986999197446,2.53867927939355,Maryland,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.0271790107973495,28.35398021654354,Maryland,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.38685433671857883,5.062075869989226,Maryland,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.42906794143635546,-0.017257987608091163,Maryland,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1624873228611919,-0.3063229284450397,Maryland,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.683539129488771,64.02288492469665,Massachusetts,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.772843490310484,74.3364375899641,Massachusetts,DEM,Risk-averting
+2,Frequently washing hands,-0.8106617361584942,77.9948017035687,Massachusetts,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6249726203545916,88.81086214951489,Massachusetts,DEM,Risk-averting
+4,Go to work,0.3582889727424572,30.2312946866793,Massachusetts,DEM,Risk-seeking
+5,Go to the gym,0.3835429574206949,3.4893507039534484,Massachusetts,DEM,Risk-seeking
+6,Go visit a friend,0.6388865742698507,12.285176813708077,Massachusetts,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7338654706838464,8.87316606429776,Massachusetts,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.21545810576210117,9.966856633485758,Massachusetts,DEM,Risk-seeking
+9,Go to church or another place of worship,0.22807192897242687,1.5087448249146016,Massachusetts,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.27181680534958963,2.2759315086400735,Massachusetts,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.090269840161316,31.382434967479348,Massachusetts,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.3797445483511527,5.832490862289354,Massachusetts,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.29774492627042237,0.7874652244828262,Massachusetts,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.2260499249451799,-0.4283884069726427,Massachusetts,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.6330476983198703,60.71076282533025,Michigan,IND,Risk-averting
+1,Avoiding public or crowded places,-1.7897769852971672,69.97865832969671,Michigan,IND,Risk-averting
+2,Frequently washing hands,-0.7949325220547155,76.54254925760759,Michigan,IND,Risk-averting
+3,Wearing a face mask when outside of your home,-1.9015944956917248,83.00296720657087,Michigan,IND,Risk-averting
+4,Go to work,0.3704161461731075,29.745548024301442,Michigan,IND,Risk-seeking
+5,Go to the gym,0.26007951349890013,2.69745906622532,Michigan,IND,Risk-seeking
+6,Go visit a friend,0.6456453171105359,10.758938133088884,Michigan,IND,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7974935216581391,8.541630561707214,Michigan,IND,Risk-seeking
+8,Go to a doctor or visit a hospital,0.2650400702495992,7.949086703115489,Michigan,IND,Risk-seeking
+9,Go to church or another place of worship,0.32411811151290704,2.4383840366302847,Michigan,IND,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.046505782222958654,1.7195390979506313,Michigan,IND,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9425926834860885,34.3373860247467,Michigan,IND,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.30450459659644025,7.544262670622962,Michigan,IND,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2740456112033664,1.8523053423057978,Michigan,IND,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1874382404406251,0.6239638079493379,Michigan,IND,Risk-seeking
+0,Avoiding contact with other people,-1.571301091740005,53.75064893810648,Minnesota,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.8499946365185518,67.5711585948795,Minnesota,DEM,Risk-averting
+2,Frequently washing hands,-0.722677415551532,70.9231626409673,Minnesota,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6783269163125591,73.02579719017093,Minnesota,DEM,Risk-averting
+4,Go to work,0.4058187181738627,30.10167682966538,Minnesota,DEM,Risk-seeking
+5,Go to the gym,0.3063318423600092,3.524068593486529,Minnesota,DEM,Risk-seeking
+6,Go visit a friend,0.4741760556974963,15.683981964135995,Minnesota,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7060812927595473,10.829930217596157,Minnesota,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.14884304670586368,8.202031501881239,Minnesota,DEM,Risk-seeking
+9,Go to church or another place of worship,0.2914090100093537,3.1584911663176087,Minnesota,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.09249116226871708,1.6632942505916326,Minnesota,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.93777546124473,37.227691128112255,Minnesota,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2434177554354617,8.406466585790897,Minnesota,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3148721216892994,2.9138960362085644,Minnesota,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.2072686955575267,1.1739517496710334,Minnesota,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.0006766193452266,52.59125313838149,Mississippi,REP,Risk-averting
+1,Avoiding public or crowded places,-1.2320828725402462,64.45771002477115,Mississippi,REP,Risk-averting
+2,Frequently washing hands,-0.6475501551825582,77.8238785143863,Mississippi,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.2332544950012578,76.62064239586972,Mississippi,REP,Risk-averting
+4,Go to work,-0.05719224353659563,38.89711116632071,Mississippi,REP,Risk-seeking
+5,Go to the gym,0.3555534793175802,1.54734541757501,Mississippi,REP,Risk-seeking
+6,Go visit a friend,0.5596284568945389,13.055313286808762,Mississippi,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6471703309286982,11.399058864697881,Mississippi,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.3342372369064711,9.895858341635794,Mississippi,REP,Risk-seeking
+9,Go to church or another place of worship,0.4143412921667332,6.023061948658278,Mississippi,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.021888460603576666,0.6003440986648187,Mississippi,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6566969609857847,37.88890400603611,Mississippi,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,-0.038256047103953,12.016095435319132,Mississippi,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.16439385394827732,3.999262207930841,Mississippi,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.16769247314215724,0.6758706381949202,Mississippi,REP,Risk-seeking
+0,Avoiding contact with other people,-1.240826744279768,52.19867675547855,Missouri,REP,Risk-averting
+1,Avoiding public or crowded places,-1.4434494905639157,63.46357757628047,Missouri,REP,Risk-averting
+2,Frequently washing hands,-0.6300119047065871,75.44490870248036,Missouri,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.4101361329009237,71.81364798857003,Missouri,REP,Risk-averting
+4,Go to work,0.1604519660988717,35.1477483447166,Missouri,REP,Risk-seeking
+5,Go to the gym,0.23168995876506823,4.012392560592601,Missouri,REP,Risk-seeking
+6,Go visit a friend,0.40722326561914846,17.215698186885525,Missouri,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5257443275564943,13.548009334593651,Missouri,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.16181927817828456,9.343120068765383,Missouri,REP,Risk-seeking
+9,Go to church or another place of worship,0.40396343103952054,2.784525992478887,Missouri,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.1154825287556268,0.4906567016492174,Missouri,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6796564523056177,41.75142645052884,Missouri,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.1854964046511735,10.11334225808707,Missouri,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.22573566445368137,3.7164874549329205,Missouri,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.17165467958942307,1.043357783173291,Missouri,REP,Risk-seeking
+0,Avoiding contact with other people,-1.1311038014766461,42.39638064712112,Montana,REP,Risk-averting
+1,Avoiding public or crowded places,-1.4678948015171636,57.87464564029486,Montana,REP,Risk-averting
+2,Frequently washing hands,-0.8153473697246245,72.21231054385282,Montana,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.807095706361485,68.06304033151558,Montana,REP,Risk-averting
+4,Go to work,-0.014570174975749271,39.997141685799576,Montana,REP,Risk-seeking
+5,Go to the gym,0.25528145261921803,4.226973380994819,Montana,REP,Risk-seeking
+6,Go visit a friend,0.29290560494617046,18.52462849667801,Montana,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.4940761439840806,14.867362462034494,Montana,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.046091347740481785,10.922671528249378,Montana,REP,Risk-seeking
+9,Go to church or another place of worship,0.12558446776056487,4.241477655155728,Montana,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.006556141941654076,1.2910341401280383,Montana,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6054221185256579,46.16980788257739,Montana,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.1826576408408305,12.298446044306754,Montana,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3665018927892741,2.673436372497772,Montana,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.21112975881818055,-0.04962660410944997,Montana,REP,Risk-seeking
+0,Avoiding contact with other people,-1.3561846091508079,48.15679946207517,Nebraska,REP,Risk-averting
+1,Avoiding public or crowded places,-1.6414522257197597,61.26195643998325,Nebraska,REP,Risk-averting
+2,Frequently washing hands,-0.6076959222411012,71.40976119324561,Nebraska,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.653779958929369,70.62744463851712,Nebraska,REP,Risk-averting
+4,Go to work,0.14880528726638614,39.16159739814924,Nebraska,REP,Risk-seeking
+5,Go to the gym,0.25699778132168105,4.981224782240577,Nebraska,REP,Risk-seeking
+6,Go visit a friend,0.4915111489221729,15.466395282126353,Nebraska,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.4990675584351478,14.29798410781638,Nebraska,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.07617443917204146,9.326538614422637,Nebraska,REP,Risk-seeking
+9,Go to church or another place of worship,0.30331369217568843,4.589810968820378,Nebraska,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.03195929563400335,1.6024363388565948,Nebraska,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6776769254897143,44.406487690719985,Nebraska,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.16592573709817204,10.93301877847177,Nebraska,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3726106340278558,3.234469181126297,Nebraska,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.2567747692089662,0.11827917946213917,Nebraska,REP,Risk-seeking
+0,Avoiding contact with other people,-1.3993963307445767,59.66359896374193,Nevada,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.5309313849040005,67.46026283453565,Nevada,DEM,Risk-averting
+2,Frequently washing hands,-0.869949153470746,81.87574668110729,Nevada,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.2313445597568262,83.27668872709981,Nevada,DEM,Risk-averting
+4,Go to work,0.20891155908861359,33.07302374512661,Nevada,DEM,Risk-seeking
+5,Go to the gym,0.3389641200306089,5.450867284851756,Nevada,DEM,Risk-seeking
+6,Go visit a friend,0.5203902912100091,11.753747591694495,Nevada,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6906472995295508,12.158582835128755,Nevada,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.1368821123451495,8.44764878605924,Nevada,DEM,Risk-seeking
+9,Go to church or another place of worship,0.2188411796935943,1.6585658571473734,Nevada,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.05471709340317498,4.302348340859917,Nevada,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.8273023417412573,34.02881296327311,Nevada,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.1690100213607057,8.270486016250763,Nevada,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.32267917986881495,1.960002813556832,Nevada,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.12812539407424392,1.8043872058441777,Nevada,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.5778774850278612,58.42909453498706,New Hampshire,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.715894637243365,71.85620066571451,New Hampshire,DEM,Risk-averting
+2,Frequently washing hands,-0.8053529777551794,76.58336551311164,New Hampshire,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6039120342972368,80.8915545023586,New Hampshire,DEM,Risk-averting
+4,Go to work,0.5277119238048334,30.051628678462325,New Hampshire,DEM,Risk-seeking
+5,Go to the gym,0.4415640445538473,2.822678504372859,New Hampshire,DEM,Risk-seeking
+6,Go visit a friend,0.605101255844506,11.705817379963015,New Hampshire,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.689736525165999,9.36949305675417,New Hampshire,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.08284999067277063,10.118462098221658,New Hampshire,DEM,Risk-seeking
+9,Go to church or another place of worship,0.19398903117341487,1.1421681923860065,New Hampshire,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.05343264619566125,1.1405363862073847,New Hampshire,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.0196188920568336,33.895998756666444,New Hampshire,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.3913697429098616,6.669804743577678,New Hampshire,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2635567245535429,2.0306155123256002,New Hampshire,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.16914177242909798,0.007361141438123386,New Hampshire,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.5811182228643414,66.87563958220301,New Jersey,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.7613269772819056,77.53030168196307,New Jersey,DEM,Risk-averting
+2,Frequently washing hands,-0.8405609876798992,81.09733137736134,New Jersey,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.5517067496780874,90.46954171690031,New Jersey,DEM,Risk-averting
+4,Go to work,0.47566886372732564,28.96342501757904,New Jersey,DEM,Risk-seeking
+5,Go to the gym,0.499081287867492,2.581751584100733,New Jersey,DEM,Risk-seeking
+6,Go visit a friend,0.5069111476479765,12.38360946785966,New Jersey,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.8595734246443687,6.468436434096127,New Jersey,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.22762351402240866,9.057460414236607,New Jersey,DEM,Risk-seeking
+9,Go to church or another place of worship,0.2863585673045155,2.708519755957158,New Jersey,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.19388313987919908,3.345026917556263,New Jersey,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.1561152647730937,28.672885976080813,New Jersey,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.26420070695380427,5.998995880525178,New Jersey,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3669250226072686,0.30236010012152015,New Jersey,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1842009991572427,-0.05156207140617042,New Jersey,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.3173087165166861,59.08448133631028,New Mexico,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.55707226253515,71.23157982473681,New Mexico,DEM,Risk-averting
+2,Frequently washing hands,-0.481393304360424,76.46135185578338,New Mexico,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.111208905969075,80.4587738193555,New Mexico,DEM,Risk-averting
+4,Go to work,0.2779731142431703,30.92875089975034,New Mexico,DEM,Risk-seeking
+5,Go to the gym,0.2800398175356277,3.425739079328063,New Mexico,DEM,Risk-seeking
+6,Go visit a friend,0.45222675924665084,13.104273622639463,New Mexico,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.753692177726093,7.605907761391233,New Mexico,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.22954140388133587,10.722392584923243,New Mexico,DEM,Risk-seeking
+9,Go to church or another place of worship,0.2519200922637001,3.5370871703524616,New Mexico,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.12212741204458427,0.9430575138719628,New Mexico,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7151915082049258,36.24827851067506,New Mexico,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.26131569256595694,7.6838217992978795,New Mexico,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.27646760533435094,1.2999492337210863,New Mexico,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.09179717195945901,1.0648260667752545,New Mexico,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.6445918103594683,69.21813662659623,New York,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.645065991861956,77.01339699750525,New York,DEM,Risk-averting
+2,Frequently washing hands,-0.7338184413269498,81.37779685166336,New York,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.3105167625402812,89.6942570022737,New York,DEM,Risk-averting
+4,Go to work,0.4919609934960899,26.04969903921569,New York,DEM,Risk-seeking
+5,Go to the gym,0.3409544588880211,4.054027333668384,New York,DEM,Risk-seeking
+6,Go visit a friend,0.5826120457079429,9.827224725277265,New York,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6237267678908014,6.461721325918729,New York,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.14400003167773565,10.219565945391134,New York,DEM,Risk-seeking
+9,Go to church or another place of worship,0.21423612994656505,3.812185334086625,New York,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.3907568083883854,6.292402931213849,New York,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9759042584597696,30.457446349305684,New York,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.27166289581375364,7.264480572651513,New York,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2397144612888763,0.8856301322724214,New York,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.14556160745092195,0.018559661816236472,New York,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.3023384796743531,60.470551290385856,North Carolina,REP,Risk-averting
+1,Avoiding public or crowded places,-1.4551436591207854,69.25704352539707,North Carolina,REP,Risk-averting
+2,Frequently washing hands,-0.576328964764926,77.92632490658553,North Carolina,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-0.8390534368350271,74.39417220887637,North Carolina,REP,Risk-averting
+4,Go to work,0.261753235964356,30.717157943809184,North Carolina,REP,Risk-seeking
+5,Go to the gym,0.4260823560829103,2.2728443500348297,North Carolina,REP,Risk-seeking
+6,Go visit a friend,0.5049882234556048,13.277783351264578,North Carolina,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6981944974490462,10.586442636743147,North Carolina,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.19073967937470096,10.368067514613962,North Carolina,REP,Risk-seeking
+9,Go to church or another place of worship,0.42266214509057987,3.9893672185528564,North Carolina,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.058495025997343304,1.743580074658376,North Carolina,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.856295379698056,32.87072790321929,North Carolina,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.16138476361524004,8.878530562170605,North Carolina,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2954778040128175,1.7125983564998721,North Carolina,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1932728723737251,-0.09450567312716496,North Carolina,REP,Risk-seeking
+0,Avoiding contact with other people,-1.1201517107963475,40.280466859077734,North Dakota,REP,Risk-averting
+1,Avoiding public or crowded places,-1.3316264554236608,52.09277515783455,North Dakota,REP,Risk-averting
+2,Frequently washing hands,-0.6738428334871561,67.54412881476762,North Dakota,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.364170957250207,54.97752720070439,North Dakota,REP,Risk-averting
+4,Go to work,-0.07322083962654248,45.62788922658414,North Dakota,REP,Risk-seeking
+5,Go to the gym,0.1725663927539858,4.920395778342489,North Dakota,REP,Risk-seeking
+6,Go visit a friend,0.22890402750951738,20.755744762037136,North Dakota,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.40303465442762604,20.44303678533319,North Dakota,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.2063266655797004,9.083046026258815,North Dakota,REP,Risk-seeking
+9,Go to church or another place of worship,0.3817747948188707,3.166334469542713,North Dakota,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.0646035823334436,0.9786484713697216,North Dakota,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6720890012248744,50.250940960973566,North Dakota,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.39060609639235006,12.326879630463143,North Dakota,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.27927962015364977,4.9279710888166255,North Dakota,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.19136473827500414,1.815623274920978,North Dakota,REP,Risk-seeking
+0,Avoiding contact with other people,-1.3743995628470733,57.72005361801179,Ohio,REP,Risk-averting
+1,Avoiding public or crowded places,-1.504775243443008,66.61372721755791,Ohio,REP,Risk-averting
+2,Frequently washing hands,-0.8230312195553425,78.37300795680677,Ohio,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.4145751758568703,76.23795700804696,Ohio,REP,Risk-averting
+4,Go to work,0.1523420690362217,33.691835158198366,Ohio,REP,Risk-seeking
+5,Go to the gym,0.3377211550867442,3.2423638517183067,Ohio,REP,Risk-seeking
+6,Go visit a friend,0.39022309210941764,14.432079389641682,Ohio,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5004385389302743,11.773518839391365,Ohio,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.0639408293137276,10.762034188496665,Ohio,REP,Risk-seeking
+9,Go to church or another place of worship,0.27819282359922176,3.6960625775291893,Ohio,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.053393306537704736,2.2541245763005566,Ohio,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.712018551788501,37.759416212597344,Ohio,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.1725579773789902,9.471882763199337,Ohio,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.19267125704361168,3.1530445645222946,Ohio,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.18992702098312822,0.5734653956769442,Ohio,REP,Risk-seeking
+0,Avoiding contact with other people,-1.2372557765900287,51.50503145618134,Oklahoma,REP,Risk-averting
+1,Avoiding public or crowded places,-1.324282838461918,62.080698196047486,Oklahoma,REP,Risk-averting
+2,Frequently washing hands,-0.7031008199866515,76.28408796768552,Oklahoma,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.4454660683131548,70.48360255666485,Oklahoma,REP,Risk-averting
+4,Go to work,0.21403241384388494,34.92716051782627,Oklahoma,REP,Risk-seeking
+5,Go to the gym,0.4046253807207845,1.6577484765133903,Oklahoma,REP,Risk-seeking
+6,Go visit a friend,0.5180560545479129,15.714843999213254,Oklahoma,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7178207093278903,12.272807893124316,Oklahoma,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17007517164587352,9.872249167394402,Oklahoma,REP,Risk-seeking
+9,Go to church or another place of worship,0.27507807277897045,4.686936530049351,Oklahoma,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.09025402681038569,0.6520513422264178,Oklahoma,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.8092118748826024,38.21717274582723,Oklahoma,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.3269812333004168,8.237070530888456,Oklahoma,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2689935916403468,2.483068366244091,Oklahoma,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.20109827478818532,1.0608581951822833,Oklahoma,REP,Risk-seeking
+0,Avoiding contact with other people,-1.124908437268099,55.72985063242147,Oregon,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.4056373840739786,68.14409476833654,Oregon,DEM,Risk-averting
+2,Frequently washing hands,-0.748484957204975,73.20826222412666,Oregon,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-0.6765072738374223,73.09700359368921,Oregon,DEM,Risk-averting
+4,Go to work,0.17756226655716315,31.620769114166034,Oregon,DEM,Risk-seeking
+5,Go to the gym,0.291191107592683,3.0817024914668893,Oregon,DEM,Risk-seeking
+6,Go visit a friend,0.4128394218013612,15.63154716499843,Oregon,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6428045038075295,10.404297403544858,Oregon,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17613484346554828,8.201953824099316,Oregon,DEM,Risk-seeking
+9,Go to church or another place of worship,0.15277759458492313,3.5348089117591046,Oregon,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.128791499716305,3.6207157305787785,Oregon,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6362756355146016,38.91662582407754,Oregon,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2214437416965295,8.158744840782092,Oregon,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2538293134736352,1.7329215358190226,Oregon,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.09489349643700348,1.3689782272382633,Oregon,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.6054436099447291,60.08995805429803,Pennsylvania,IND,Risk-averting
+1,Avoiding public or crowded places,-1.6460230613875968,69.68571957584179,Pennsylvania,IND,Risk-averting
+2,Frequently washing hands,-0.7831341043389013,76.78362448060014,Pennsylvania,IND,Risk-averting
+3,Wearing a face mask when outside of your home,-1.7833961340328122,85.55607950341471,Pennsylvania,IND,Risk-averting
+4,Go to work,0.35330236505169355,29.207305989471248,Pennsylvania,IND,Risk-seeking
+5,Go to the gym,0.353111500303787,2.6417979996112138,Pennsylvania,IND,Risk-seeking
+6,Go visit a friend,0.5208950945602207,11.80504854404187,Pennsylvania,IND,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7179511563108987,8.331511646045492,Pennsylvania,IND,Risk-seeking
+8,Go to a doctor or visit a hospital,0.3108790006919229,7.664781708683788,Pennsylvania,IND,Risk-seeking
+9,Go to church or another place of worship,0.34883102671467087,2.2093670081643415,Pennsylvania,IND,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.2108847694475069,2.1011553002405283,Pennsylvania,IND,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9230329813734077,35.33034601621147,Pennsylvania,IND,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2740336563033874,8.48872585352608,Pennsylvania,IND,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3184051378718474,2.3760695672638095,Pennsylvania,IND,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.20810197100749492,0.4111616495488257,Pennsylvania,IND,Risk-seeking
+0,Avoiding contact with other people,-1.605943000333282,64.32077208444127,Rhode Island,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.7848654839610276,76.50106556381458,Rhode Island,DEM,Risk-averting
+2,Frequently washing hands,-0.6671062144436382,77.45891173606843,Rhode Island,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-2.060497633376651,92.57116265672175,Rhode Island,DEM,Risk-averting
+4,Go to work,0.17424955173469084,31.146901196831248,Rhode Island,DEM,Risk-seeking
+5,Go to the gym,0.25123985719053826,5.455555231158986,Rhode Island,DEM,Risk-seeking
+6,Go visit a friend,0.23143523570352498,15.132265150691453,Rhode Island,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5922380531665612,9.149996127999636,Rhode Island,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.18421555901270611,9.518168081870384,Rhode Island,DEM,Risk-seeking
+9,Go to church or another place of worship,0.1170367427865403,3.7993627854491336,Rhode Island,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.1748302752062423,1.5023974900713712,Rhode Island,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.8744482345787145,36.72657323449046,Rhode Island,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.23580914196762884,8.818150362736342,Rhode Island,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3325755371829777,0.871861938362235,Rhode Island,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.14945014836751197,-0.04364637543132499,Rhode Island,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.4728685973004663,59.820881192958396,South Carolina,REP,Risk-averting
+1,Avoiding public or crowded places,-1.4031553166842952,67.59788408573623,South Carolina,REP,Risk-averting
+2,Frequently washing hands,-0.6571258021204538,77.19305366133798,South Carolina,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.2337919345675339,74.43990259246847,South Carolina,REP,Risk-averting
+4,Go to work,0.09731627148825617,36.61765579801828,South Carolina,REP,Risk-seeking
+5,Go to the gym,0.24843999767691557,3.8140320276717983,South Carolina,REP,Risk-seeking
+6,Go visit a friend,0.5984616786106576,12.286994196465747,South Carolina,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5909420574105566,13.050483231730805,South Carolina,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.16799452531921025,11.011253165791896,South Carolina,REP,Risk-seeking
+9,Go to church or another place of worship,0.2805188232311673,5.675605993575008,South Carolina,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.003292236370866338,1.6302370964236728,South Carolina,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6145123465270382,38.96125145144045,South Carolina,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.15158456248451227,10.00765639949035,South Carolina,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2612603697709865,1.8529676359122478,South Carolina,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.07860594288232575,1.6329788614556122,South Carolina,REP,Risk-seeking
+0,Avoiding contact with other people,-1.1807917868251843,42.19435507258328,South Dakota,REP,Risk-averting
+1,Avoiding public or crowded places,-1.3366109054742419,54.92003052083277,South Dakota,REP,Risk-averting
+2,Frequently washing hands,-0.5487633749660619,66.89050366020751,South Dakota,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.2681269684578147,54.74947092966633,South Dakota,REP,Risk-averting
+4,Go to work,0.1068896814102674,40.59379025986647,South Dakota,REP,Risk-seeking
+5,Go to the gym,0.2956401421879595,3.022503032469471,South Dakota,REP,Risk-seeking
+6,Go visit a friend,0.29413786699587136,20.3463771188606,South Dakota,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5294991885015945,16.189600998308293,South Dakota,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.13488184989143462,10.454958680749748,South Dakota,REP,Risk-seeking
+9,Go to church or another place of worship,0.3590362110897498,6.2842413861751,South Dakota,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.10233733088991745,-0.16855883754405743,South Dakota,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.6346199762315824,49.35499422916281,South Dakota,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.249580193766124,11.982666617939943,South Dakota,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.23931884504977777,5.878075819348966,South Dakota,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.26625051566816155,1.461095013326151,South Dakota,REP,Risk-seeking
+0,Avoiding contact with other people,-1.342743638823884,56.664827925060436,Tennessee,REP,Risk-averting
+1,Avoiding public or crowded places,-1.4342333414365893,65.91791062386704,Tennessee,REP,Risk-averting
+2,Frequently washing hands,-0.7816806177394927,80.40972834888751,Tennessee,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.2466965477487446,73.64668165027248,Tennessee,REP,Risk-averting
+4,Go to work,0.06393572951255004,35.21970240643486,Tennessee,REP,Risk-seeking
+5,Go to the gym,0.22867764183724806,4.0992904923384375,Tennessee,REP,Risk-seeking
+6,Go visit a friend,0.573067494771119,13.240074156597188,Tennessee,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6674534705107155,12.58232702124613,Tennessee,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17364220902431668,10.943043678570591,Tennessee,REP,Risk-seeking
+9,Go to church or another place of worship,0.34417987097935904,4.295916191804793,Tennessee,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.010056414184534821,1.3288728173369306,Tennessee,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7147797421537031,37.38991059178083,Tennessee,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.21980355725275497,8.398201814267074,Tennessee,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.19601168754339712,3.1820106346566353,Tennessee,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.11706425781988702,1.1486889544564949,Tennessee,REP,Risk-seeking
+0,Avoiding contact with other people,-1.5735027413054097,63.51003237135984,Texas,REP,Risk-averting
+1,Avoiding public or crowded places,-1.563820411823539,71.14062207585685,Texas,REP,Risk-averting
+2,Frequently washing hands,-0.7567957153819115,80.52706895722147,Texas,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.3149841588953226,82.67592831686268,Texas,REP,Risk-averting
+4,Go to work,0.37811029065007407,33.183147177856696,Texas,REP,Risk-seeking
+5,Go to the gym,0.3404994065244309,4.638779085682353,Texas,REP,Risk-seeking
+6,Go visit a friend,0.5622263193230741,12.22851890440668,Texas,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7540741846687057,11.015212416591384,Texas,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.1270760545276253,10.693131622574922,Texas,REP,Risk-seeking
+9,Go to church or another place of worship,0.286267929430492,4.8590415402387634,Texas,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.03671581523180511,2.739158718229572,Texas,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.8491172475407012,33.45482739369366,Texas,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.28801288984000845,7.485995476841277,Texas,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.23409228242034,1.5126595905065021,Texas,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.16327755408077727,0.7722858535978023,Texas,REP,Risk-seeking
+0,Avoiding contact with other people,-1.3005035636724793,50.16396651851443,Utah,REP,Risk-averting
+1,Avoiding public or crowded places,-1.5542733492171141,61.02735737542355,Utah,REP,Risk-averting
+2,Frequently washing hands,-0.7670803191839083,75.77289953696784,Utah,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.7632266873807914,74.30359596055266,Utah,REP,Risk-averting
+4,Go to work,0.21284757006975305,38.44558995459601,Utah,REP,Risk-seeking
+5,Go to the gym,0.3655505000690282,5.869003786700653,Utah,REP,Risk-seeking
+6,Go visit a friend,0.37729082856897744,21.783883021849313,Utah,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5302815516995508,14.95601901349683,Utah,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.07465251249490792,12.100602519359427,Utah,REP,Risk-seeking
+9,Go to church or another place of worship,0.558356830409507,3.439841381123956,Utah,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.09847578299508784,3.8227607290528,Utah,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7358318301103474,44.94254328858666,Utah,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.08242053948036908,11.769278202067714,Utah,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2389228711216247,3.9650447150900776,Utah,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.3567939457390579,-0.19793834458385717,Utah,REP,Risk-seeking
+0,Avoiding contact with other people,-1.7010377471681601,64.7538054095532,Vermont,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.848939649715895,75.60653190684486,Vermont,DEM,Risk-averting
+2,Frequently washing hands,-1.018330871288097,75.22863073204634,Vermont,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6601311138118215,84.92107038191799,Vermont,DEM,Risk-averting
+4,Go to work,0.37624765761678347,29.4196831519684,Vermont,DEM,Risk-seeking
+5,Go to the gym,0.2848582782350316,1.4555350771214997,Vermont,DEM,Risk-seeking
+6,Go visit a friend,0.48282038803700206,10.667108045767609,Vermont,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6207587204299361,5.86075477055363,Vermont,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17915702355650473,9.750345541502373,Vermont,DEM,Risk-seeking
+9,Go to church or another place of worship,0.1749484524478741,0.8483170435112362,Vermont,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.012391806044894156,2.1400533286396772,Vermont,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,1.0028803541451756,34.43040985342234,Vermont,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.38136901829421715,7.097437262926361,Vermont,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.22474367183623523,1.0623541253934699,Vermont,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.13454891881052503,-0.36587187212954064,Vermont,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.4658126663961732,63.04487756178435,Virginia,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.5742738219936634,71.84588329585665,Virginia,DEM,Risk-averting
+2,Frequently washing hands,-0.6022449456115825,77.90927259981923,Virginia,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-1.0526114880477346,80.8884471861744,Virginia,DEM,Risk-averting
+4,Go to work,0.13956294925916102,33.573636968148534,Virginia,DEM,Risk-seeking
+5,Go to the gym,0.3853804154962172,4.304513251929336,Virginia,DEM,Risk-seeking
+6,Go visit a friend,0.5687574686676434,12.226807546916152,Virginia,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6311131129227194,9.50569577852741,Virginia,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.22162601664401974,9.219720931609107,Virginia,DEM,Risk-seeking
+9,Go to church or another place of worship,0.23608145805570963,3.5107036751632155,Virginia,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.1442774167117169,1.0756584803574676,Virginia,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7678855733953135,34.10973483619959,Virginia,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2622234867884546,7.690347645637512,Virginia,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2335045133788359,1.7435225212043624,Virginia,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1696917293647137,0.6280499392355638,Virginia,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.3678650032887907,60.987216805661994,Washington,DEM,Risk-averting
+1,Avoiding public or crowded places,-1.4225616418756353,69.57915748003109,Washington,DEM,Risk-averting
+2,Frequently washing hands,-0.7414656500522626,75.12279091524016,Washington,DEM,Risk-averting
+3,Wearing a face mask when outside of your home,-0.657874232607633,76.00399384379908,Washington,DEM,Risk-averting
+4,Go to work,0.3969531220778567,28.394673188029014,Washington,DEM,Risk-seeking
+5,Go to the gym,0.3630857526008027,2.6627586659583784,Washington,DEM,Risk-seeking
+6,Go visit a friend,0.4248646221317739,13.811062765310414,Washington,DEM,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.680178655767954,7.459159985452345,Washington,DEM,Risk-seeking
+8,Go to a doctor or visit a hospital,0.019070985040682952,11.057220243903746,Washington,DEM,Risk-seeking
+9,Go to church or another place of worship,0.24521126527563963,1.9963057344070596,Washington,DEM,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.17842067080885055,3.582347909880491,Washington,DEM,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9569527861402553,31.723051637747762,Washington,DEM,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2898510840639287,5.963711909559161,Washington,DEM,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.28879863118107274,0.9787920198614408,Washington,DEM,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.1690195214901872,0.51923349061923,Washington,DEM,Risk-seeking
+0,Avoiding contact with other people,-1.585113496009923,59.48935832709047,West Virginia,REP,Risk-averting
+1,Avoiding public or crowded places,-1.7352729479109847,70.52533786982822,West Virginia,REP,Risk-averting
+2,Frequently washing hands,-0.925235366635457,80.69691185386836,West Virginia,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.5070189288075326,76.77843021212465,West Virginia,REP,Risk-averting
+4,Go to work,0.1418756878085733,30.48428883532053,West Virginia,REP,Risk-seeking
+5,Go to the gym,0.12089602361725486,2.784702850877952,West Virginia,REP,Risk-seeking
+6,Go visit a friend,0.5880784428969625,14.108870187624555,West Virginia,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.5047294601826032,8.775253996318591,West Virginia,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.22804492325913167,10.429230492439551,West Virginia,REP,Risk-seeking
+9,Go to church or another place of worship,0.2503713840692634,3.910589187144505,West Virginia,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.04370461581008492,0.9629422592073154,West Virginia,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9209600684351351,35.215442635947966,West Virginia,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.2463155495179157,8.568923053745905,West Virginia,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.13761928580208446,3.199544950648632,West Virginia,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.17760654205172327,0.3264821303325376,West Virginia,REP,Risk-seeking
+0,Avoiding contact with other people,-1.4815714669221545,53.38949237060196,Wisconsin,IND,Risk-averting
+1,Avoiding public or crowded places,-1.6868198601474014,64.73180827773044,Wisconsin,IND,Risk-averting
+2,Frequently washing hands,-0.6375481386407906,71.30476433871249,Wisconsin,IND,Risk-averting
+3,Wearing a face mask when outside of your home,-1.4098792140462901,69.22510709315893,Wisconsin,IND,Risk-averting
+4,Go to work,0.20439517916138336,35.57800070415,Wisconsin,IND,Risk-seeking
+5,Go to the gym,0.20757499114405398,4.314549077266118,Wisconsin,IND,Risk-seeking
+6,Go visit a friend,0.5765840697904828,13.975222983242293,Wisconsin,IND,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.6809052731065598,11.568819065591043,Wisconsin,IND,Risk-seeking
+8,Go to a doctor or visit a hospital,0.17471540069586988,8.882616357432358,Wisconsin,IND,Risk-seeking
+9,Go to church or another place of worship,0.2968703857447044,2.7693975236169894,Wisconsin,IND,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.08697620601667708,1.2825330210580446,Wisconsin,IND,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.9449813461090764,39.56915596363899,Wisconsin,IND,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.37270758839855533,7.893586752866823,Wisconsin,IND,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.2293214057890503,3.7785740346426198,Wisconsin,IND,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.20018420669221582,0.6453497909799637,Wisconsin,IND,Risk-seeking
+0,Avoiding contact with other people,-1.2926516900853056,44.36135149913492,Wyoming,REP,Risk-averting
+1,Avoiding public or crowded places,-1.4980975278633508,53.79075075735943,Wyoming,REP,Risk-averting
+2,Frequently washing hands,-0.8306284815519328,70.5249988250801,Wyoming,REP,Risk-averting
+3,Wearing a face mask when outside of your home,-1.6981668676570707,57.89872209566936,Wyoming,REP,Risk-averting
+4,Go to work,0.37732536383750587,36.44508388737883,Wyoming,REP,Risk-seeking
+5,Go to the gym,0.30664398497079565,2.841172190538571,Wyoming,REP,Risk-seeking
+6,Go visit a friend,0.5543060992124761,18.073914500243557,Wyoming,REP,Risk-seeking
+7,"Go to a cafe, bar, or restaurant",0.7768548146566979,11.500202686468768,Wyoming,REP,Risk-seeking
+8,Go to a doctor or visit a hospital,0.05029532768974337,11.211610413160829,Wyoming,REP,Risk-seeking
+9,Go to church or another place of worship,0.22544484516947697,4.181091945287076,Wyoming,REP,Risk-seeking
+10,"Take mass transit (e.g. subway, bus, or train)",0.08077611359589519,0.5789054583966917,Wyoming,REP,Risk-seeking
+11,Been in a room with someone outside of household in the past 24 hours,0.7435364836518473,46.88523432213565,Wyoming,REP,Risk-seeking
+12,Been in a room with 5-10 people outside of household in the past 24 hours,0.10744639629112365,15.08630575646399,Wyoming,REP,Risk-seeking
+13,Been in a room with 11-50 people outside of household in the past 24 hours,0.3130461988851523,3.8338701577515497,Wyoming,REP,Risk-seeking
+14,Been in a room with over 50 people outside of household in the past 24 hours,0.13272960538634584,1.761794799211689,Wyoming,REP,Risk-seeking
