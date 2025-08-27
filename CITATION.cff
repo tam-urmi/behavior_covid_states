@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Characterizing Population-level Changes in Human Behavior during the COVID-19 Pandemic in the United States"
+authors:
+  - family-names: Urmi
+    given-names: Tamanna I.
+  - family-names: Pant
+    given-names: Biplav
+  - family-names: Dewey
+    given-names: Grace
+  - family-names: Quintana-Mathé
+    given-names: Alejandra
+  - family-names: Lang
+    given-names: Irene
+  - family-names: Druckman
+    given-names: James N.
+  - family-names: Ognyanova
+    given-names: Katherine
+  - family-names: Baum
+    given-names: Matthew
+  - family-names: Perlis
+    given-names: Roy H.
+  - family-names: Riedl
+    given-names: Christoph
+  - family-names: Lazer
+    given-names: David
+  - family-names: Santillana
+    given-names: Mauricio
+date-released: 2024-12-20
+version: "1.0.0"
+doi: 10.1101/2024.12.20.24319446
+type: preprint
+repository-code: https://github.com/tam-urmi/behavior_covid_states
+url: https://doi.org/10.1101/2024.12.20.24319446
